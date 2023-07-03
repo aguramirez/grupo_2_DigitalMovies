@@ -11,6 +11,7 @@ Nelson Diego Carrillo: estudiante Terciario cursando la carrera de Profesor de M
 
 Facundo Lobo: Estudiante de Digital House y futuro ing en sistemas.
 
+Lopez Maribel Nieves: estudiante de una tecnicatura en informatica, me interesa saber mas sobre programacion.
 
 Sitios de referencia:
 * https://www.cinepolis.com.ar/
