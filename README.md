@@ -19,3 +19,4 @@ Sitios de referencia:
 * https://www.netflix.com/
 * https://orangetv.orange.es/brw?bci=hm
 * https://www.filmin.es/catalogo?rights=tvod
+Estos fueron elegidos por como presentan los productos (peliculas), con sus metodos de busqueda, filtros, secciones, si bien el objetivo es distinto al de nuestro proyecto su funcionalidad es muy similar.
