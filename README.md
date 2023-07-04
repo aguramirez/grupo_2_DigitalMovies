@@ -26,3 +26,4 @@ Estos fueron elegidos por como presentan los productos (peliculas), con sus meto
 * Login: https://wireframe.cc/jTcAHd
 * Registro: https://wireframe.cc/sXOCt0
 * Carro de Compras: https://wireframe.cc/daKNnm
+* Detalle del producto: https://wireframe.cc/cjEpEL
