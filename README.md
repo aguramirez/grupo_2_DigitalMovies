@@ -13,6 +13,8 @@ Facundo Lobo: Estudiante de Digital House y futuro ing en sistemas.
 
 Lopez Maribel Nieves: estudiante de una tecnicatura en informatica, me interesa saber mas sobre programacion.
 
+Pablo Ignacio Garzón: estudiante de nivel terciario de tecnicatura en ciencia de datos e ia, futuro analista de sistemas y si el destino lo permite, tambien futuro ing en informática. Al principio no estaba decidido a seguir carreras y disciplinas referidas a la informática, aunque tras varios años me termino gustando y he decidio seguir.
+
 Sitios de referencia:
 * https://www.cinepolis.com.ar/
 * https://mhy.cuevana.pro/
