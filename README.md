@@ -15,6 +15,8 @@ Lopez Maribel Nieves: estudiante de una tecnicatura en informatica, me interesa 
 
 Pablo Ignacio Garzón: estudiante de nivel terciario de tecnicatura en ciencia de datos e ia, futuro analista de sistemas y si el destino lo permite, tambien futuro ing en informática. Al principio no estaba decidido a seguir carreras y disciplinas referidas a la informática, aunque tras varios años me termino gustando y he decidio seguir.
 
+Karen Camila Segovia: soy estudiante de ingeniería, si bien la ingenieria que estudio casi no se relaciona con la programación, me interesa mucho este mundo 
+
 Sitios de referencia:
 * https://www.cinepolis.com.ar/
 * https://mhy.cuevana.pro/
