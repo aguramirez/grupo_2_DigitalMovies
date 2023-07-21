@@ -1,0 +1,155 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    margin: 0%;
+    width: 100%;
+}
+
+header img {
+    max-width: 10%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 40%;
+}
+
+.botones-nav{
+    width: 25%;
+    margin: 10px;
+}
+
+.botones-nav button{
+    display: block;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    width: 100%;
+    margin: 10px;
+}
+
+.botones-usuario{
+    padding: 10px;
+    margin: 5px;
+}
+
+.botones-usuario a{
+    width: 5%;
+}
+
+.botones-nav button:hover {
+    background-color: #45a049;
+}
+
+
+main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.portada{
+    display: none;
+    width: 100%;
+}
+
+.filtros-izq {
+    display: none;
+    background-color: #f1f1f1;
+    padding: 10px;
+}
+
+
+.contenido {
+    padding: 10px;
+}
+
+.tarjetas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.tarjeta {
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 10px;
+    width: 50%;
+    margin: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.tarjeta:hover {
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+    transform: translateY(-10px);
+}
+
+.tarjeta img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* celular */
+@media (min-width: 450px){
+
+
+    main{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .filtros-izq {
+        display: none;
+    }
+
+    .tarjeta{
+        width: 20%;
+    }
+}
+
+@media (min-width: 750px){
+
+    .botones-nav{
+        display: flex;
+    }
+
+    .botones-nav button{
+        width: 30%;
+    }
+
+    main{
+        display: flex;
+    }
+    .filtros-izq {
+        display: block;
+        background-color: #f1f1f1;
+        padding: 10px;
+    }
+
+    .filtros-izq li{
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
+    .tarjeta{
+        width: 15%;
+    }
+}
