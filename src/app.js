@@ -9,3 +9,6 @@ app.listen(3030, () => console.log('Servidor abierto'));
 app.get('/', (req, res) => {
     res.sendFile(path.resolve(__dirname, "./views/index.html"))
 });
+app.get('/compras', (req, res) => {
+    res.sendFile(path.resolve(__dirname, "./views/productCart.html"))
+});
