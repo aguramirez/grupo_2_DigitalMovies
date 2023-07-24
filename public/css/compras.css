@@ -1,0 +1,141 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    margin: 0%;
+    width: 100%;
+}
+
+header img {
+    max-width: 10%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 40%;
+}
+
+.botones-nav {
+    width: 25%;
+    margin: 10px;
+}
+
+.botones-nav button {
+    display: block;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    width: 100%;
+    margin: 10px;
+}
+
+.botones-usuario {
+    padding: 10px;
+    margin: 5px;
+    font-size: 35px;
+}
+
+.botones-usuario a {
+    width: 5%;
+}
+
+.botones-nav button:hover {
+    background-color: #45a049;
+}
+
+.tarjeta {
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 10px;
+    width: 50%;
+    margin: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+
+
+.tarjeta:hover {
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+    transform: translateY(-10px);
+}
+
+.tarjeta img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.tarjetas {
+    display: flex;
+    align-items: center;
+}
+
+.contenido {
+    padding: 10px;
+}
+
+.centrado {
+    padding: 30px;
+}
+
+
+.cuadrado {
+    border: 1px solid black;
+    float: right;
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+    opacity: 40%;
+}
+
+.texto {
+    overflow: hidden;
+}
+
+.total-compra {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 220px;
+    border: 3px solid #4CAF50;
+    border-radius: 5px;
+    font-size: 25px;
+}
+
+.contenedores {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
+}
+
+button {
+    margin-bottom: 10px;
+    background-color: #4CAF50;
+    width: 140px;
+    border-radius: 5px;
+    color: white;
+    border: none;
+    font-size: 25px;
+}
+.contenedores button:hover{
+    background-color: #45a049;
+}
