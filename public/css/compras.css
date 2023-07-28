@@ -44,14 +44,21 @@ nav input {
     margin: 10px;
 }
 
-.botones-usuario {
+.botones-usuario{
+    display: flex;
     padding: 10px;
     margin: 5px;
-    font-size: 35px;
 }
 
-.botones-usuario a {
-    width: 5%;
+.botones-usuario a{
+    width: 20%;
+    padding: 5px;
+    margin: 20px;
+    text-decoration: none;
+}
+
+.register, .login{
+    color: white;
 }
 
 .botones-nav button:hover {
@@ -138,4 +145,15 @@ button {
 }
 .contenedores button:hover{
     background-color: #45a049;
+}
+
+@media (min-width: 750px){
+
+    .botones-nav{
+        display: flex;
+    }
+
+    .botones-nav button{
+        width: 30%;
+    }
 }

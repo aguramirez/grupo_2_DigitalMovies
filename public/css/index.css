@@ -45,12 +45,20 @@ nav input {
 }
 
 .botones-usuario{
+    display: flex;
     padding: 10px;
     margin: 5px;
 }
 
 .botones-usuario a{
-    width: 5%;
+    width: 20%;
+    padding: 5px;
+    margin: 20px;
+    text-decoration: none;
+}
+
+.register, .login{
+    color: white;
 }
 
 .botones-nav button:hover {
