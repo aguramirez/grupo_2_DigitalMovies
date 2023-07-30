@@ -10,8 +10,13 @@ header {
     width: 100%;
 }
 
+.logo{
+  width: 20%;
+  margin: 10px;
+}
+
 nav img {
-    max-width: 20%;
+  max-width: 100%;
 }
 
 nav {
@@ -147,6 +152,14 @@ main {
   .social-buttons .facebook-btn {
     background-color: #3b5998;
     color: #ffffff;
+  }
+
+  .social-buttons .google-btn:hover {
+    background-color: #c04332;
+  }
+  
+  .social-buttons .facebook-btn:hover {
+    background-color: #344d85;
   }
 
   .social-buttons .google-btn i {

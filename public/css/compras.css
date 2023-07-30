@@ -10,8 +10,13 @@ header {
     width: 100%;
 }
 
-header img {
-    max-width: 20%;
+.logo{
+    width: 20%;
+    margin: 10px;
+}
+
+nav img {
+    max-width: 100%;
 }
 
 nav {

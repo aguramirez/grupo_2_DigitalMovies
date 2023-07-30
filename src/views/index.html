@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Digital Movies</title>
     <link rel="stylesheet" type="text/css" href="/css/index.css">
     <script src="https://kit.fontawesome.com/3208776249.js" crossorigin="anonymous"></script>
 </head>
@@ -12,7 +12,11 @@
 <body>
     <header>
         <nav>
-            <a href="/"><img src="/images/logo.jpg" alt="logo"></a>
+            <div class="logo">
+                <a href="/">
+                    <img src="/images/logo.jpg" alt="logo">
+                </a>
+            </div>
 
             <input type="text" placeholder="Peliculas, Series, Cine">
             <div class="botones-nav">
@@ -22,8 +26,10 @@
             </div>
             <div class="botones-usuario">
                 <a href="/compras"><i class="fa-solid fa-cart-shopping fa-2xs" style="color: #ffffff;"></i></a>
-                <a href="/register" class="register"><i class="fa-solid fa-circle-user fa-2xs" style="color: #ffffff;"></i>Register</a>
-                <a href="/login" class="register"><i class="fa-solid fa-circle-user fa-2xs" style="color: #ffffff;"></i>Login</a>
+                <a href="/register" class="register"><i class="fa-solid fa-circle-user fa-2xs"
+                        style="color: #ffffff;"></i>Register</a>
+                <a href="/login" class="register"><i class="fa-solid fa-circle-user fa-2xs"
+                        style="color: #ffffff;"></i>Login</a>
             </div>
         </nav>
     </header>
@@ -45,12 +51,16 @@
             <h3>Destacadas</h3>
             <div class="tarjetas">
 
+
                 <div class="tarjeta">
                     <p>Clasificacion</p>
-                    <img src="/images/logo.jpg" alt="logo">
-                    <p>Titulo pelicula</p>
-                </div>
+                    <a class="oppenheimer" href="/productDetail">
+                        <img src="/images/oppenheimer.jpg" alt="logo">
+                    </a>
+                    <a href="/productDetail">Detalle</a>
+                    <p>Oppenheimer</p>
 
+                </div>
                 <div class="tarjeta">
                     <p>Clasificacion</p>
                     <img src="/images/logo.jpg" alt="logo">

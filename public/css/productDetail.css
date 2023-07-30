@@ -1,0 +1,163 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    margin: 0%;
+    width: 100%;
+}
+
+.logo{
+    width: 20%;
+    margin: 10px;
+}
+
+nav img {
+    max-width: 100%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 40%;
+}
+
+.botones-nav {
+    width: 25%;
+    margin: 10px;
+}
+
+.botones-nav button {
+    display: block;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    width: 100%;
+    margin: 10px;
+}
+
+.botones-usuario {
+    display: flex;
+    padding: 10px;
+    margin: 5px;
+}
+
+.botones-usuario a {
+    width: 20%;
+    padding: 5px;
+    margin: 20px;
+    text-decoration: none;
+}
+
+.register,
+.login {
+    color: white;
+}
+
+.botones-nav button:hover {
+    background-color: #45a049;
+}
+
+main {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.portada-pelicula {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: #333;
+    padding: 20px;
+    height: 50vh;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.card-sinopsis {
+    width: 40%;
+    height: 200px;
+    padding: 10px;
+    margin: 20px;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+.form-container {
+    display: flex;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.form-column {
+    flex: 1;
+    padding: 0 10px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+select,
+input[type="date"] {
+    width: 100%;
+    padding: 5px;
+    font-size: 16px;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+@media (min-width: 750px){
+
+    .botones-nav{
+        display: flex;
+    }
+
+    .botones-nav button{
+        width: 30%;
+    }
+
+    .portada-pelicula {
+        height: 70vh;
+    }
+}
