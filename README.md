@@ -32,5 +32,5 @@ Estos fueron elegidos por como presentan los productos (peliculas), con sus meto
 * Carro de Compras: https://wireframe.cc/daKNnm
 * Detalle del producto: https://wireframe.cc/cjEpEL
 
-
+Tablero en Trello:
 * Tablero de Trabajo: https://trello.com/b/qR3ao2ow/grupo2digitalmovies
