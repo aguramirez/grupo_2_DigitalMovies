@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalle del Producto</title>
+    <link href="https://fonts.googleapis.com/css2? family= Roboto & mostrar=intercambiar" rel="hoja de estilo">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/productDetail.css">
+    <script src="https://kit.fontawesome.com/316c0af2a9.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="header-principal">
+        <div class="header-principal-top">
+            <img src="/imagenes/logo-dm.jpeg" alt="">
+            <div class="buscador">
+                <input type="text" name="buscador" placeholder="Peliculas, Series, Cine">
+                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+            <div class="header-right">
+                <button type="submit">Peliculas</button>
+                <button type="submit">Series</button>
+                <button type="submit">Entradas</button>  
+            </div>
+        </div>
+        <div class="header-principal-bottom">
+            <div class="menu">
+                <button type="submit"><i class="fa-solid fa-bars"></i></button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class="detalle">
+                <h2>elemental</h2>
+                <img src="/imagenes/1370531530853580808.jpg" alt=""> 
+                <div class="detalle-producto">
+                    <p class="duracion">Duracion:</p>
+                    <p class="genero">Genero:</p>
+                    <p class="actores">Actores:</p>
+                </div>
+              
+                <div class="descripcion-producto">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam, fugit illo repudiandae quidem, earum corporis praesentium at alias harum commodi deleniti odio veniam nemo? Necessitatibus nam quos adipisci accusantium quod.</p>
+                </div>
+            </div>
+            
+        </section>
+        <section class="trailer">
+            <div class="video-top">
+                <p>Trailer</p>
+            </div>   
+            <div class="video-bottom">
+                <img src="/imagenes/1366_2000.jpeg" alt="">
+                <i class="fa-solid fa-circle-play"></i>
+            </div>
+            
+        </section>
+        <section class="comprar">
+            <h4>Elegir por:</h4>
+            <form action="compra-entrada" method="get">
+                <div class="form-comprar">
+                    <label>Sala</label>
+                    <select name="Salas" class="desplegable">
+                        <option value="">1</option>
+                        <option value="">15</option>
+                        <option value="">7</option>
+                    </select>
+                </div>
+                <div class="form-comprar">
+                    <label>Idioma</label>
+                    <select name="Idioma" class="desplegable">
+                        <option value="">Subtitulo</option>
+                        <option value="">Español</option>
+                    </select>
+                </div>
+                <div class="form-comprar">
+                    <label class="formato">Formato</label>
+                    <select name="Formato" class="desplegable">
+                        <option value="">2D</option>
+                        <option value="">3D</option>
+                    </select>
+                </div>
+             <button type="submit" >comprar</button>   
+            </form>
+    </main>
+    <footer>
+       <img src="/imagenes/logo-dm.jpeg" alt=""> 
+       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam sunt dolorum aliquam fugiat. Amet, quos quo soluta repudiandae reprehenderit doloribus quia non fugit, iste molestiae laboriosam nihil hic iusto libero!</p>
+    </footer>
+    
+</body>
+</html>
