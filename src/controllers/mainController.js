@@ -10,11 +10,14 @@ const controller = {
     productDetail: (req, res) => {
         return res.render(path.join(__dirname, '../views', 'productDetail'));
     },
-    Login: (req, res) => {
+    login: (req, res) => {
         return res.render(path.join(__dirname, '../views', 'login'));
     },
-    Register: (req, res) => {
+    register: (req, res) => {
         return res.render(path.join(__dirname, '../views', 'register'));
+    },
+    addProduct: (req, res) => {
+        return res.render(path.join(__dirname, '../views', 'cargaProductos'));
     }
 }
 
