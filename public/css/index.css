@@ -11,12 +11,12 @@ header {
 }
 
 .logo{
-    width: 20%;
-    margin: 10px;
+  width: 20%;
+  margin: 10px;
 }
 
 nav img {
-    max-width: 100%;
+  max-width: 100%;
 }
 
 nav {
@@ -82,6 +82,22 @@ main {
     width: 100%;
 }
 
+.add-producto {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+  }
+
+  .add-producto:hover {
+    background-color: #2980b9;
+  }
+
 .filtros-izq {
     display: none;
     background-color: #f1f1f1;
@@ -131,6 +147,20 @@ main {
     height: auto;
     display: block;
     margin-bottom: 10px;
+}
+
+footer{
+    display: flex;
+    background-color: #333;
+    color: white;
+    font-size: medium;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+footer i{
+    margin: 40px;
 }
 
 /* celular */

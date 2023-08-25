@@ -2,23 +2,22 @@ const path = require('path');
 
 const controller = {
     home: (req, res) => {
-        return res.render(path.join(__dirname, '../views', 'home'));
+        res.render('home');
     },
     productCart: (req, res) => {
-        return res.render(path.join(__dirname, '../views', 'productCart'));
+        res.render('productCart');
     },
     productDetail: (req, res) => {
-        return res.render(path.join(__dirname, '../views', 'productDetail'));
+        res.render('productDetail');
     },
     login: (req, res) => {
-        return res.render(path.join(__dirname, '../views', 'login'));
+        res.render('login');
     },
     register: (req, res) => {
-        return res.render(path.join(__dirname, '../views', 'register'));
+        res.render('register');
     },
     addProduct: (req, res) => {
-        return res.render(path.join(__dirname, '../views', 'cargaProductos'));
+        res.render('cargaProductos');
     }
-}
-
+};
 module.exports = controller;

@@ -170,6 +170,19 @@ main {
     margin: 5px;
   }
   
+  footer{
+    display: flex;
+    background-color: #333;
+    color: white;
+    font-size: medium;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+footer i{
+    margin: 40px;
+}
 
 
 @media (min-width: 750px){
