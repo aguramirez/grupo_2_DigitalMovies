@@ -1,0 +1,199 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    margin: 0%;
+    width: 100%;
+}
+
+.logo{
+  width: 20%;
+  margin: 10px;
+}
+
+nav img {
+  max-width: 100%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 40%;
+}
+
+.botones-nav{
+    width: 25%;
+    margin: 10px;
+}
+
+.botones-nav button{
+    display: block;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    width: 100%;
+    margin: 10px;
+}
+
+.botones-usuario{
+    display: flex;
+    padding: 10px;
+    margin: 5px;
+}
+
+.botones-usuario a{
+    width: 20%;
+    padding: 5px;
+    margin: 20px;
+    text-decoration: none;
+}
+
+.register, .login{
+    color: white;
+}
+
+.botones-nav button:hover {
+    background-color: #45a049;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+    padding: 30px;
+  }
+  
+  .container {
+    display: flex;
+    max-width: 600px;
+  }
+  
+  .izq-card,
+  .der-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+  }
+  
+  .izq-card {
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .der-card {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+  
+  label {
+    font-weight: bold;
+  }
+  
+  input, button, textarea {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  textarea{
+    resize: none;
+  }
+  
+  button {
+    margin-top: 15px;
+    padding: 10px 16px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .cancel-btn {
+    background-color: #dc3545;
+  }
+
+  .cancel-btn:hover {
+    background-color: #c72f3e;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  .profile-picture {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .profile-picture label {
+    cursor: pointer;
+  }
+  
+  .profile-picture i {
+    font-size: 64px;
+    margin-bottom: 10px;
+  }
+
+footer{
+    display: flex;
+    background-color: #333;
+    color: white;
+    font-size: medium;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+footer i{
+    margin: 40px;
+}
+
+@media (min-width: 750px){
+
+    .botones-nav{
+        display: flex;
+    }
+
+    .botones-nav button{
+        width: 30%;
+    }
+}

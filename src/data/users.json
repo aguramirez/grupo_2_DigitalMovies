@@ -1,0 +1,42 @@
+[
+    {
+        "id":1,
+        "firstName":"congue",
+        "lastName":"dui maecenas",
+        "email":"dhellen0@google.com",
+        "password":"dM1(lk%gA7&p7",
+        "avatar":"/images/avatars/polloCorazon.jpg"
+    },
+    {
+        "id":2,
+        "firstName":"vulputate",
+        "lastName":"diam",
+        "email":"bminall1@nydailynews.com",
+        "password":"hO3<|Up0",
+        "avatar":"/images/avatars/polloCorazon.jpg"
+    },
+    {
+        "id":3,
+        "firstName":"mi",
+        "lastName":"elit ac",
+        "email":"jgilsthorpe2@diigo.com",
+        "password":"kG0\\=qVqqu",
+        "avatar":"/images/avatars/kipa.jpg"
+    },
+    {
+        "id":4,
+        "firstName":"in",
+        "lastName":"purus",
+        "email":"mrosengarten3@go.com",
+        "password":"pE2(k!Q?/",
+        "avatar":"/images/avatars/polloCorazon.jpg"
+    },
+    {
+        "id":5,
+        "firstName":"pharetra magna",
+        "lastName":"tempor",
+        "email":"amarples4@unc.edu",
+        "password":"bD9+F/_%d(i9#`$",
+        "avatar":"/images/avatars/pretzel.jpg"
+    }
+]

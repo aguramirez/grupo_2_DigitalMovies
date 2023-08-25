@@ -1,0 +1,20 @@
+[
+    {
+        "id": "1",
+        "titulo": "Oppenheimer",
+        "descripcion": "descripcion",
+        "imagen": "/images/oppenheimer.jpg",
+        "trailer": "https://www.youtube.com/embed/MVvGSBKV504",
+        "anio": "2023",
+        "categoria": "Ficcion Historica"
+    },
+    {
+        "id": "2",
+        "titulo": "Barbie",
+        "descripcion": "descripcion",
+        "imagen": "/images/barbie.jpg",
+        "trailer": "https://www.youtube.com/embed/gH2mRECr6y4",
+        "anio": "2023",
+        "categoria": "Fantasia"
+    }
+]
