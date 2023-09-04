@@ -2,10 +2,12 @@ const path = require('path')
 const express = require('express');
 const app = express();
 const mainRoutes = require('./routes/mainRoutes');
+const productsRoutes = require('./routes/productsRoutes');
 
 app.use(express.static('public'));
 
 app.use('/', mainRoutes);
+app.use('/product', productsRoutes);
 
 app.set('view engine', 'ejs');
 

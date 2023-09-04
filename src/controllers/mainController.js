@@ -1,15 +1,20 @@
+const fs =require ('fs');
 const path = require('path');
+
+const peliculasFilePath= path.join(__dirname,'../data/dataPeliculas.json');
 
 const controller = {
     home: (req, res) => {
-        res.render('home');
+        const peliculas = JSON.parse(fs.readFileSync(peliculasFilePath,'utf-8'))
+        res.render('home',{peliculas : peliculas});
     },
     productCart: (req, res) => {
         res.render('productCart');
     },
-    productDetail: (req, res) => {
+    /*productDetail: (req, res) => {
+
         res.render('productDetail');
-    },
+    },*/
     login: (req, res) => {
         res.render('login');
     },

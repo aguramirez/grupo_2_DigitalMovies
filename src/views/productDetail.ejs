@@ -6,10 +6,10 @@
         <%- include('./partials/header') %>
 
         <main>
-            <h3>Oppenheimer</h3>
+            <h3><%= pelicula.titulo %></h3>
             <a class="boton-editar" href="/cargaProductos">Editar</a>
             <div class="portada-pelicula">
-                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/MVvGSBKV504" frameborder="0" allowfullscreen></iframe>
+                <iframe width="100%" height="100%" src= '<%= pelicula.trailer %>' frameborder="0" allowfullscreen></iframe>
             </div>
     
             <div class="container">

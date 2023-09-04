@@ -23,22 +23,17 @@
             <h3>Destacadas</h3>
             <a class="add-producto" href="/cargaProductos">Agregar</a>
             <div class="tarjetas">
-
-                <div class="tarjeta">
-                    <p>Clasificacion</p>
-                    <a class="oppenheimer" href="/productDetail">
-                        <img src="/images/oppenheimer.jpg" alt="logo">
-                    </a>
-                    <a href="/productDetail">Detalle</a>
-                    <p>Oppenheimer</p>
-
-                </div>
-                <div class="tarjeta">
-                    <p>Clasificacion</p>
-                    <img src="/images/logo.jpg" alt="logo">
-                    <p>Titulo pelicula</p>
-                </div>
-
+                <% peliculas.forEach(pelicula => { %>
+                    <div class="tarjeta">
+                        <p>Clasificacion</p>
+                        <a class="oppenheimer" href="/product/detail/<%= pelicula.id %>">
+                            <img src="<%= pelicula.imagen %>" alt="logo">
+                        </a>
+                        <a href="/product/detail/<%= pelicula.id %>">Detalle</a>
+                        <p><%= pelicula.titulo %></p>
+                    </div>  
+                <% }); %>
+                <% /* %>
                 <div class="tarjeta">
                     <p>Clasificacion</p>
                     <img src="/images/logo.jpg" alt="logo">
@@ -86,8 +81,14 @@
                     <img src="/images/logo.jpg" alt="logo">
                     <p>Titulo pelicula</p>
                 </div>
+
+                <div class="tarjeta">
+                    <p>Clasificacion</p>
+                    <img src="/images/logo.jpg" alt="logo">
+                    <p>Titulo pelicula</p>
+                </div><% */ %>
             </div>
-        </div>
+        </div> 
     </main>
     <%- include('./partials/footer') %>
 </body>
