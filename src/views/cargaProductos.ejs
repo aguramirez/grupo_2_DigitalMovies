@@ -8,8 +8,8 @@
 
     <main>
         <div class="container">
-            <div class="izq-card">
-              <form action="#" method="POST" enctype="multipart/form-data">
+            <!-- <div class="izq-card">
+              <form action="/products/create" method="POST" enctype="multipart/form-data">
                 <h2>Subir foto de portada</h2>
                 <div class="profile-picture">
                   <label for="foto">
@@ -19,9 +19,9 @@
                   <input type="file" id="foto" name="foto" accept="image/*">
                 </div>
               </form>
-            </div>
+            </div> -->
             <div class="der-card">
-              <form action="#" method="POST">
+              <form action="/products/create" method="POST" enctype="multipart/form-data" >
                 <h2>Agregar pelicula</h2>
                 <div class="input-group">
                   <label for="titulo">Titulo</label>
@@ -42,6 +42,12 @@
                 <div class="input-group">
                   <label for="descripcion">Descripcion</label>
                   <textarea id="descripcion" name="descripcion" rows="8" cols="40" required></textarea>
+                </div>
+                <div class="input-group">
+                  <label for="imagen">
+                    <span>Imagen de portada</span>
+                  </label>
+                  <input type="file" id="imagen" name="imagen">
                 </div>
                 <button type="button" class="cancel-btn">Cancelar</button>
                 <button type="submit">Agregar</button>

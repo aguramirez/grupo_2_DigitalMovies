@@ -21,72 +21,18 @@
         </div>
         <div class="contenido">
             <h3>Destacadas</h3>
-            <a class="add-producto" href="/cargaProductos">Agregar</a>
+            <a class="add-producto" href="/products/create">Agregar</a>
             <div class="tarjetas">
                 <% peliculas.forEach(pelicula => { %>
                     <div class="tarjeta">
-                        <p>Clasificacion</p>
-                        <a class="oppenheimer" href="/product/detail/<%= pelicula.id %>">
+                        <p><%= pelicula.categoria %></p>
+                        <a class="oppenheimer" href="/products/detail/<%= pelicula.id %>">
                             <img src="<%= pelicula.imagen %>" alt="logo">
                         </a>
-                        <a href="/product/detail/<%= pelicula.id %>">Detalle</a>
+                        <a href="/products/detail/<%= pelicula.id %>">Detalle</a>
                         <p><%= pelicula.titulo %></p>
                     </div>  
                 <% }); %>
-                <% /* %>
-                <div class="tarjeta">
-                    <p>Clasificacion</p>
-                    <img src="/images/logo.jpg" alt="logo">
-                    <p>Titulo pelicula</p>
-                </div>
-
-                <div class="tarjeta">
-                    <p>Clasificacion</p>
-                    <img src="/images/logo.jpg" alt="logo">
-                    <p>Titulo pelicula</p>
-                </div>
-
-                <div class="tarjeta">
-                    <p>Clasificacion</p>
-                    <img src="/images/logo.jpg" alt="logo">
-                    <p>Titulo pelicula</p>
-                </div>
-
-                <div class="tarjeta">
-                    <p>Clasificacion</p>
-                    <img src="/images/logo.jpg" alt="logo">
-                    <p>Titulo pelicula</p>
-                </div>
-
-                <div class="tarjeta">
-                    <p>Clasificacion</p>
-                    <img src="/images/logo.jpg" alt="logo">
-                    <p>Titulo pelicula</p>
-                </div>
-
-                <div class="tarjeta">
-                    <p>Clasificacion</p>
-                    <img src="/images/logo.jpg" alt="logo">
-                    <p>Titulo pelicula</p>
-                </div>
-
-                <div class="tarjeta">
-                    <p>Clasificacion</p>
-                    <img src="/images/logo.jpg" alt="logo">
-                    <p>Titulo pelicula</p>
-                </div>
-
-                <div class="tarjeta">
-                    <p>Clasificacion</p>
-                    <img src="/images/logo.jpg" alt="logo">
-                    <p>Titulo pelicula</p>
-                </div>
-
-                <div class="tarjeta">
-                    <p>Clasificacion</p>
-                    <img src="/images/logo.jpg" alt="logo">
-                    <p>Titulo pelicula</p>
-                </div><% */ %>
             </div>
         </div> 
     </main>

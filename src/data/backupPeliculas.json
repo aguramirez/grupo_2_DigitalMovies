@@ -1,0 +1,92 @@
+[
+    {
+     "id": 1,
+     "titulo": "Oppenheimer",
+     "descripcion": "descripcion",
+     "imagen": "/images/oppenheimer.jpg",
+     "trailer": "https://www.youtube.com/embed/MVvGSBKV504",
+     "anio": "2023",
+     "categoria": "Ficcion Historica"
+    },
+    {
+     "id": 2,
+     "titulo": "Barbie",
+     "descripcion": "descripcion",
+     "imagen": "/images/barbie.jpg",
+     "trailer": "https://www.youtube.com/embed/gH2mRECr6y4",
+     "anio": "2023",
+     "categoria": "Fantasia"
+    },
+    {
+     "id": 3,
+     "titulo": "Elvis",
+     "descripcion": "Una mirada a la vida y la carrera del legendario cantante y músico Elvis Presley.",
+     "imagen": "/images/elvis.jpg",
+     "trailer": "https://www.youtube.com/embed/9824e9n3s80",
+     "anio": "2022",
+     "categoria": "Biografia"
+    },
+    {
+     "id": 4,
+     "titulo": "Top Gun: Maverick",
+     "descripcion": "Pete 'Maverick' Mitchell debe entrenar a un grupo de jóvenes pilotos de combate para una misión especial.",
+     "imagen": "/images/topgunmaverick.jpg",
+     "trailer": "https://www.youtube.com/embed/giXcP8j3yGk",
+     "anio": "2022",
+     "categoria": "Acción"
+    },
+    {
+     "id": 5,
+     "titulo": "Spider-Man: Across the Spider-Verse",
+     "descripcion": "Miles Morales se embarca en una aventura interdimensional para unir a los Spider-Men de diferentes universos.",
+     "imagen": "/images/spidermanacrossthespiderverse.jpg",
+     "trailer": "https://www.youtube.com/embed/x37Yq6p6C6k",
+     "anio": "2023",
+     "categoria": "Animación"
+    },
+    {
+     "id": 6,
+     "titulo": "The Batman",
+     "descripcion": "Bruce Wayne se enfrenta a un nuevo villano, El Acertijo, mientras intenta limpiar Gotham City de la corrupción.",
+     "imagen": "/images/thebatman.jpg",
+     "trailer": "https://www.youtube.com/embed/P4j-8Xq8e14",
+     "anio": "2022",
+     "categoria": "Acción"
+    },
+    {
+     "id": 7,
+     "titulo": "Doctor Strange in the Multiverse of Madness",
+     "descripcion": "Doctor Strange debe enfrentarse a una amenaza multiversal mientras intenta ayudar a América Chávez a controlar sus poderes.",
+     "imagen": "/images/doctorstrangeinthemultiverseofmadness.jpg",
+     "trailer": "https://www.youtube.com/embed/xsv9n7Z6r9I",
+     "anio": "2022",
+     "categoria": "Fantasia"
+    },
+    {
+     "id": 8,
+     "titulo": "Jurassic World Dominion",
+     "descripcion": "Los dinosaurios viven ahora entre los humanos, y deben coexistir de alguna manera.",
+     "imagen": "/images/jurassicworlddominion.jpg",
+     "trailer": "https://www.youtube.com/embed/fbJ89s_d8lA",
+     "anio": "2022",
+     "categoria": "Acción"
+    },
+    {
+     "id": 9,
+     "titulo": "The Black Phone",
+     "descripcion": "Un niño secuestrado por un asesino en serie se comunica con las víctimas anteriores del asesino a través de un teléfono desconectado.",
+     "imagen": "/images/theblackphone.jpg",
+     "trailer": "https://www.youtube.com/embed/3b_36t197v8",
+     "anio": "2022",
+     "categoria": "Horror"
+    },
+    {
+     "id": 10,
+     "titulo": "Everything Everywhere All at Once",
+     "descripcion": "Una mujer china inmigrante debe salvar el mundo explorando los infinitos universos paralelos que existen.",
+     "imagen": "/images/everythingeverywhereallatonce.jpg",
+     "trailer": "https://www.youtube.com/embed/Mx4Q_Dv2_6Y",
+     "anio": "2022",
+     "categoria": "Comedia"
+    }
+   ]
