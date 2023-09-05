@@ -88,29 +88,5 @@
   "trailer": "https://www.youtube.com/embed/Mx4Q_Dv2_6Y",
   "anio": "2022",
   "categoria": "Comedia"
- },
- {
-  "id": 11,
-  "titulo": "titulo",
-  "imagen": "/images/default.jpg",
-  "trailer": "trailer",
-  "anio": "2015",
-  "categoria": "fa"
- },
- {
-  "id": 12,
-  "titulo": "titulo",
-  "imagen": "\\images\\pelicula-1693951922110.jpg",
-  "trailer": "f",
-  "anio": "2015",
-  "categoria": "categoria"
- },
- {
-  "id": 13,
-  "titulo": "titulo",
-  "imagen": "\\images\\pelicula-1693951971823.jpg",
-  "trailer": "f",
-  "anio": "2015",
-  "categoria": "categoria"
  }
 ]
