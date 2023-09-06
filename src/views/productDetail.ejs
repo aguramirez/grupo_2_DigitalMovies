@@ -7,7 +7,10 @@
 
         <main>
             <h3><%= pelicula.titulo %></h3>
-            <a class="boton-editar" href="#">Editar</a>
+            <a class="boton-editar" href="/products/<%= pelicula.id %>/edit">Editar</a>
+            <form action="/products/<%= pelicula.id %>?_method=DELETE" method="POST">
+                <button type="submit" class="boton-borrar">Eliminar</button>
+            </form>
             <div class="portada-pelicula">
                 <iframe width="100%" height="100%" src= '<%= pelicula.trailer %>' frameborder="0" allowfullscreen></iframe>
             </div>
@@ -15,7 +18,7 @@
             <div class="container">
                 <div class="card-sinopsis">
                     <button>Sinopsis</button>
-                    <button>Datos tecnicos</button>
+                    <button>Datos tecnicos</button> 
                     <p><%= pelicula.descripcion %></p>
                 </div>
     

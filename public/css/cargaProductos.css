@@ -146,7 +146,17 @@ main {
   }
   
   .cancel-btn {
+    display: flex;
+    margin-top: 15px;
+    padding: 10px 16px;
     background-color: #dc3545;
+    color: #ffffff;
+    border-radius: 4px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    text-decoration: none;
   }
 
   .cancel-btn:hover {

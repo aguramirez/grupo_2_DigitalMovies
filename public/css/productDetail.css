@@ -109,6 +109,24 @@ main {
     background-color: #2980b9;
   }
 
+  .boton-borrar{
+    display: block;
+    padding: 12px 20px;
+    background-color: #dc3545;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    margin: 10px;
+    font-size: 16px;
+  }
+
+  .boton-borrar:hover {
+    background-color: #c72f3e;
+  }
+
 .card-sinopsis {
     width: 40%;
     height: 200px;

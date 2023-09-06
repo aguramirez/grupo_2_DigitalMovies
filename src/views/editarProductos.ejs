@@ -8,49 +8,37 @@
 
     <main>
         <div class="container">
-            <!-- <div class="izq-card">
-              <form action="/products/create" method="POST" enctype="multipart/form-data">
-                <h2>Subir foto de portada</h2>
-                <div class="profile-picture">
-                  <label for="foto">
-                    <i class="fas fa-user-circle"></i>
-                    <span>Foto de portada</span>
-                  </label>
-                  <input type="file" id="foto" name="foto" accept="image/*">
-                </div>
-              </form>
-            </div> -->
             <div class="der-card">
-              <form action="/products/create" method="POST" enctype="multipart/form-data" >
-                <h2>Agregar pelicula</h2>
+              <form action="/products/<%= pelicula.id %>?_method=PUT" method="POST" enctype="multipart/form-data" >
+                <h2>Editar pelicula</h2>
                 <div class="input-group">
                   <label for="titulo">Titulo</label>
-                  <input type="text" id="titulo" name="titulo" required>
+                  <input type="text" id="titulo" name="titulo" value="<%= pelicula.titulo %>" required>
                 </div>
                 <div class="input-group">
                   <label for="trailer">Trailer URL</label>
-                  <input type="text" id="trailer" name="trailer" required>
+                  <input type="text" id="trailer" name="trailer" value="<%= pelicula.trailer %>" required>
                 </div>
                 <div class="input-group">
                   <label for="anio">Año</label>
-                  <input type="text" id="anio" name="anio" required>
+                  <input type="text" id="anio" name="anio" value="<%= pelicula.anio %>" required>
                 </div>
                 <div class="input-group">
                   <label for="categoria">Categoria</label>
-                  <input type="text" id="categoria" name="categoria" required>
+                  <input type="text" id="categoria" name="categoria" value="<%= pelicula.categoria %>" required>
                 </div>
                 <div class="input-group">
                   <label for="descripcion">Descripcion</label>
-                  <textarea id="descripcion" name="descripcion" rows="8" cols="40" required></textarea>
+                  <textarea id="descripcion" name="descripcion" rows="8" cols="40" required><%= pelicula.descripcion %></textarea>
                 </div>
                 <div class="input-group">
                   <label for="imagen">
                     <span>Imagen de portada</span>
                   </label>
-                  <input type="file" id="imagen" name="imagen">
+                  <input type="file" id="imagen" name="imagen" value="<%= pelicula.imagen %>">
                 </div>
                 <a href="/" class="cancel-btn" >Cancelar</a>
-                <button type="submit">Agregar</button>
+                <button type="submit">Editar</button>
               </form>
             </div>
           </div>

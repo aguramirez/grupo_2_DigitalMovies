@@ -84,9 +84,9 @@
   "id": 10,
   "titulo": "Everything Everywhere All at Once",
   "descripcion": "Una mujer china inmigrante debe salvar el mundo explorando los infinitos universos paralelos que existen.",
-  "imagen": "/images/everythingeverywhereallatonce.jpg",
   "trailer": "https://www.youtube.com/embed/Mx4Q_Dv2_6Y",
   "anio": "2022",
-  "categoria": "Comedia"
+  "categoria": "Comedia",
+  "imagen": "/images/everythingeverywhereallatonce.jpg"
  }
 ]

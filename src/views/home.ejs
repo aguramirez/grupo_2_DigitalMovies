@@ -25,12 +25,12 @@
             <div class="tarjetas">
                 <% peliculas.forEach(pelicula => { %>
                     <div class="tarjeta">
-                        <p><%= pelicula.categoria %></p>
+                        <p class="tituloPeli"><%= pelicula.titulo %></p>
                         <a class="oppenheimer" href="/products/detail/<%= pelicula.id %>">
                             <img src="<%= pelicula.imagen %>" alt="logo">
                         </a>
                         <a href="/products/detail/<%= pelicula.id %>">Detalle</a>
-                        <p><%= pelicula.titulo %></p>
+                        <p><%= pelicula.categoria %></p>
                     </div>  
                 <% }); %>
             </div>
