@@ -1,42 +1,50 @@
 <%- include('./partials/head') %>
     <link rel="stylesheet" type="text/css" href="/css/index.css">
-</head>
+    </head>
 
-<body>
-    <%- include('./partials/header') %>
+    <body>
+        <%- include('./partials/header') %>
 
-    <main>
-        <!-- <div class="portada">
+            <main>
+                <!-- <div class="portada">
             <img src="/images/oppenheimer.jpg" alt="portada">
         </div> -->
-        <div class="filtros-izq">
-            <h3>Filtros</h3>
-            <ul>
-                <li>Accion</li>
-                <li>Aventura</li>
-                <li>Terror</li>
-                <li>Suspenso</li>
-                <li>Independiente</li>
-            </ul>
-        </div>
-        <div class="contenido">
-            <h3>Destacadas</h3>
-            <a class="add-producto" href="/products/create">Agregar</a>
-            <div class="tarjetas">
-                <% peliculas.forEach(pelicula => { %>
-                    <div class="tarjeta">
-                        <p class="tituloPeli"><%= pelicula.titulo %></p>
-                        <a class="oppenheimer" href="/products/detail/<%= pelicula.id %>">
-                            <img src="<%= pelicula.imagen %>" alt="logo">
-                        </a>
-                        <a href="/products/detail/<%= pelicula.id %>">Detalle</a>
-                        <p><%= pelicula.categoria %></p>
-                    </div>  
-                <% }); %>
-            </div>
-        </div> 
-    </main>
-    <%- include('./partials/footer') %>
-</body>
+                <div class="filtros-izq">
+                    <h3>Filtros</h3>
+                    <ul>
+                        <li>Accion</li>
+                        <li>Aventura</li>
+                        <li>Terror</li>
+                        <li>Suspenso</li>
+                        <li>Independiente</li>
+                    </ul>
+                </div>
+                <div class="contenido">
+                    <h3>Destacadas</h3>
+                    <a class="add-producto" href="/products/create">Agregar</a>
+                    <div class="tarjetas">
+                        <% peliculas.forEach(pelicula=> { %>
+                            <div class="tarjeta" style="background-image: url('<%= pelicula.imagen %>');"
+                                data-pelicula-id="<%= pelicula.id %>">
+                                <p class="tituloPeli">
+                                    <%= pelicula.titulo %>
+                                </p>
+                            </div>
+                            <% }); %>
+                                <script>
+                                    let tarjetas = document.querySelectorAll(".tarjeta");
+                                    tarjetas.forEach(function (tarjeta) {
+                                        tarjeta.addEventListener("click", function () {
+                                            let peliculaId = this.getAttribute("data-pelicula-id");
+                                            window.location.href = "/products/detail/" + peliculaId;
+                                        });
+                                    });
+                                </script>
 
-</html>
+                    </div>
+                </div>
+            </main>
+            <%- include('./partials/footer') %>
+    </body>
+
+    </html>

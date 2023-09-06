@@ -123,13 +123,26 @@ main {
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
+
 .tituloPeli{
+    display: flex;
     font-weight: bold;
+    background-color: #333;
+    color: #ffffff;
+    height: fit-content;
+    padding: 10px;
+    width: 100%;
+    justify-content: center;
+    border-radius: 10px;
+    opacity: 0;
 }
+
+
 
 .tarjeta {
     display: flex;
-    flex-wrap: wrap;
+    align-items: end;
+    justify-content: center;
     border: 1px solid #ddd;
     padding: 10px;
     border-radius: 10px;
@@ -137,11 +150,17 @@ main {
     margin: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s, box-shadow 0.3s;
+    height: 270px;
 }
 
 .tarjeta:hover {
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
     transform: translateY(-10px);
+    cursor: pointer;
+}
+
+.tarjeta:hover .tituloPeli{
+    opacity: 0.8;
 }
 
 .tarjeta img {

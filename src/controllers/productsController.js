@@ -2,7 +2,7 @@ const fs = require ('fs');
 const path =require ('path');
 
 const peliculasFilePath= path.join(__dirname,'../data/dataPeliculas.json');
-const peliculas = JSON.parse(fs.readFileSync(peliculasFilePath,'utf-8'))
+const peliculas = JSON.parse(fs.readFileSync(peliculasFilePath,'utf-8'));
 
 const controller = {
     home: (req, res)=>{
@@ -10,6 +10,8 @@ const controller = {
     },
     detail: (req, res)=>{
          
+		const peliculas = JSON.parse(fs.readFileSync(peliculasFilePath,'utf-8'));
+		
         const id = req.params.id;
         const peliculaId  = peliculas.find(pelicula=>{
             return pelicula.id == id;
