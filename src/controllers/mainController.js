@@ -15,12 +15,12 @@ const controller = {
 
         res.render('productDetail');
     },*/
-    login: (req, res) => {
+    /*login: (req, res) => {
         res.render('login');
     },
     register: (req, res) => {
         res.render('register');
-    },
+    },*/
     addProduct: (req, res) => {
         res.render('cargaProductos');
     }

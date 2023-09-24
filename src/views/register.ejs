@@ -7,8 +7,8 @@
     </body>
     <main>
         <div class="container">
+          <form action="/user/register" method="POST" enctype="multipart/form-data">
             <div class="izq-card">
-              <form action="#" method="POST" enctype="multipart/form-data">
                 <h2>Subir foto de perfil</h2>
                 <div class="profile-picture">
                   <label for="foto">
@@ -17,10 +17,9 @@
                   </label>
                   <input type="file" id="foto" name="foto" accept="image/*">
                 </div>
-              </form>
             </div>
             <div class="der-card">
-              <form action="#" method="POST">
+              <form action="/user/register" method="POST">
                 <h2>Registrarse</h2>
                 <div class="input-group">
                   <label for="usuario">Usuario</label>
@@ -48,9 +47,10 @@
                 </div>
                 <button type="button" class="cancel-btn">Cancelar</button>
                 <button type="submit">Registrarse</button>
-              </form>
+              
             </div>
-          </div>
+          </form>  
+        </div>
     </main>
     <%- include('./partials/footer') %>
 </html>
