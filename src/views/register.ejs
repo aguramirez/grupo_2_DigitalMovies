@@ -7,6 +7,7 @@
     </body>
     <main>
         <div class="container">
+          
           <form action="/user/register" method="POST" enctype="multipart/form-data">
             <div class="izq-card">
                 <h2>Subir foto de perfil</h2>
@@ -16,6 +17,11 @@
                     <span>Foto de perfil</span>
                   </label>
                   <input type="file" id="foto" name="foto" accept="image/*">
+                  <% if (locals.errors && errors.foto) { %> 
+                    <div>
+                     <%= errors.foto.msg %>
+                    </div>
+                   <% } %>
                 </div>
             </div>
             <div class="der-card">
@@ -23,27 +29,57 @@
                 <h2>Registrarse</h2>
                 <div class="input-group">
                   <label for="usuario">Usuario</label>
-                  <input type="text" id="usuario" name="usuario" required>
+                  <input type="text" id="usuario" name="usuario" value="<%= locals.oldData? oldData.usuario : null%>">
+                  <% if (locals.errors && errors.usuario) { %>  <% // SI hay error en el campo usuario %>
+                   <div>
+                    <%= errors.usuario.msg %>
+                   </div>
+                  <% } %>
                 </div>
                 <div class="input-group">
                   <label for="contrasena">Contraseña</label>
-                  <input type="password" id="contrasena" name="contrasena" required>
+                  <input type="password" id="contrasena" name="contrasena">
+                  <% if (locals.errors && errors.contrasena) { %>  
+                    <div>
+                     <%= errors.contrasena.msg %>
+                    </div>
+                   <% } %>
                 </div>
                 <div class="input-group">
                   <label for="confirmarContrasena">Confirmar contraseña</label>
-                  <input type="password" id="confirmarContrasena" name="confirmarContrasena" required>
+                  <input type="password" id="confirmarContrasena" name="confirmarContrasena">
+                  <% if (locals.errors && errors.confirmarContrasena) { %>  
+                    <div>
+                     <%= errors.confirmarContrasena.msg %>
+                    </div>
+                   <% } %>
                 </div>
                 <div class="input-group">
                   <label for="email">Email</label>
-                  <input type="email" id="email" name="email" required>
+                  <input type="text" id="email" name="email" value="<%= locals.oldData? oldData.email : null%>">
+                  <% if (locals.errors && errors.email) { %>  
+                    <div>
+                     <%= errors.email.msg %>
+                    </div>
+                   <% } %>
                 </div>
                 <div class="input-group">
                   <label for="confirmarEmail">Confirmar email</label>
-                  <input type="email" id="confirmarEmail" name="confirmarEmail" required>
+                  <input type="text" id="confirmarEmail" name="confirmarEmail" value="<%= locals.oldData? oldData.confirmarEmail : null%>">
+                  <% if (locals.errors && errors.confirmarEmail) { %>  
+                    <div>
+                     <%= errors.confirmarEmail.msg %>
+                    </div>
+                   <% } %>
                 </div>
                 <div class="input-group">
                   <label for="fechaNacimiento">Fecha de nacimiento</label>
-                  <input type="date" id="fechaNacimiento" name="fechaNacimiento" required>
+                  <input type="date" id="fechaNacimiento" name="fechaNacimiento" value="<%= locals.oldData? oldData.fechaNacimiento : null%>">
+                  <% if (locals.errors && errors.fechaNacimiento) { %>  
+                    <div>
+                     <%= errors.fechaNacimiento.msg %>
+                    </div>
+                   <% } %>
                 </div>
                 <button type="button" class="cancel-btn">Cancelar</button>
                 <button type="submit">Registrarse</button>
