@@ -10,12 +10,12 @@ const validationsRegister = [
     body('confirmarEmail').notEmpty().withMessage('Debes confirmar el email').bail()
         .isEmail().withMessage('Ingresa un formato de email válido'),
     body('fechaNacimiento').notEmpty().withMessage('Debes colocar tu fecha de nacimiento'),
-    body('foto').custom((value, {req})=>{
-        let file= req.file;
-        if(!file){
-            throw new Error ('Debes subir una imagen');
-        }
-        return true // no borrar
-    })
+    // body('foto').custom((value, {req})=>{
+    //     let file= req.file;
+    //     if(!file){
+    //         throw new Error ('Debes subir una imagen');
+    //     }
+    //     return true // no borrar
+    // })
 ]
 module.exports = validationsRegister;

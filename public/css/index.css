@@ -109,6 +109,11 @@ main {
     padding: 10px;
 }
 
+.listaDeUsuarios{
+    display: block;
+    color: #333;
+}
+
 .oppenheimer{
     transition: transform 0.3s;
 }

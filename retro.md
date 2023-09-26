@@ -2,5 +2,4 @@ Una de las cosas que pudimos identificar en este proceso fue la necesidad de una
 
 Durante el proceso, también aprovechamos para compartir nuestras ideas y propuestas para el sitio web. Lo mejor de este primer paso fue darnos cuenta de que pudimos completar la tarea de una manera relativamente fácil. Nuestro equipo demostró un gran compromiso y colaboración. Trabajar juntos en esta tarea nos permitio conocernos más sobre nuestras habilidades y fortalezas individuales.
 
-# sprint 3:
 Quiero compartir los avances en nuestro proyecto. Identificamos áreas de mejora, priorizando la organización, lo cual superamos en el primer sprint. También hemos compartido ideas para el sitio y completado tareas antes complicadas. La colaboración y el compromiso de cada miembro han sido destacables, lo que fortaleció nuestro entendimiento de habilidades individuales. Sigamos construyendo sobre estos cimientos.

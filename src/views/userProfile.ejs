@@ -1,0 +1,35 @@
+<%- include('./partials/head') %>
+    <link rel="stylesheet" type="text/css" href="/css/index.css">
+    </head>
+
+    <body>
+        <%- include('./partials/header') %>
+
+            <main>
+                <div class="contenido">
+                    <h3>
+                        <%= usuario?.usuario %>
+                    </h3>
+                    <ul>
+                        <li>Id: <%= usuario?.id %>
+                        </li>
+                        <li>Email: <%= usuario?.email %>
+                        </li>
+                        <li>Password: <%= usuario?.password %>
+                        </li>
+                    </ul>
+                    <div class="fotoPerfil">
+                        <% if(usuario?.foto == null){ %>
+                            <ul>
+                                <li>Este usuario no tiene foto</li>
+                            </ul>
+                        <% }; %>
+                        <img src="<%= usuario?.foto %>" alt="">
+                    </div>
+                </div>
+
+            </main>
+            <%- include('./partials/footer') %>
+    </body>
+
+    </html>
