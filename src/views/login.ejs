@@ -6,21 +6,35 @@
         <%- include('./partials/header') %>
 
             <main>
-                
+
                 <div class="card">
-                    <form action="/" method="POST">
+                    <form action="/user/login" method="POST">
                         <h2>Iniciar sesión</h2>
                         <div class="input-group">
-                            <label for="usuario">Usuario/Email</label>
-                            <input type="text" id="usuario" name="usuario" required>
+                            <label for="email">Email</label>
+                            <input type="text" id="email" name="email" required>
+                            <% if (locals.errors && errors.email) { %>
+                                <div>
+                                    <%= errors.email.msg %>
+                                </div>
+                                <% } %>
                         </div>
                         <div class="input-group">
                             <label for="contrasena">Contraseña</label>
                             <input type="password" id="contrasena" name="contrasena" required>
+                            <% if (locals.errors && errors.contrasena) { %>
+                                <div>
+                                    <%= errors.contrasena.msg %>
+                                </div>
+                                <% } %>
                         </div>
                         <div class="input-group">
                             <input type="checkbox" id="olvido" name="olvido">
                             <label for="olvido">Olvidé mi contraseña</label>
+                        </div>
+                        <div class="input-group">
+                            <input type="checkbox" id="recuerdame" name="recuerdame">
+                            <label for="recuerdame">Recuerdame</label>
                         </div>
                         <button type="submit">Login</button>
                         <div class="social-buttons">
@@ -35,4 +49,5 @@
             </main>
     </body>
     <%- include('./partials/footer') %>
-</html>
+
+        </html>
