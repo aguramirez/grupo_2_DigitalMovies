@@ -10,7 +10,7 @@
                     <h3>Listado de usuarios</h3>
                     <% usuarios.forEach(usuario=> { %>
                         <a href="/user/<%= usuario.id %>" class="listaDeUsuarios">
-                            <%= usuario.id %>: <%= usuario.usuario %>
+                            click para ver perfil de: <%= usuario.usuario %>
                         </a>
                         <form action="/user/delete/<%= usuario.id %>?_method=DELETE" method="POST">
                             <button type="submit" class="boton-borrar">Eliminar</button>

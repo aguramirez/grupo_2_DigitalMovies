@@ -68,7 +68,7 @@ nav input {
 
 .botones-nav button:hover {
     background-color: #45a049;
-}
+} 
 
 main {
     display: flex;
@@ -98,6 +98,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 200px;
   }
   
   .der-card {
@@ -107,7 +108,6 @@ main {
   
   form {
     display: flex;
-    flex-direction: column;
   }
   
   h2 {
