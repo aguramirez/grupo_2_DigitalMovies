@@ -1,30 +1,33 @@
-const fs = require ('fs');
-const path =require ('path');
+const fs = require('fs');
+const path = require('path');
 
-const peliculasFilePath= path.join(__dirname,'../data/dataPeliculas.json');
-const peliculas = JSON.parse(fs.readFileSync(peliculasFilePath,'utf-8'));
+const peliculasFilePath = path.join(__dirname, '../data/dataPeliculas.json');
+const peliculas = JSON.parse(fs.readFileSync(peliculasFilePath, 'utf-8'));
 
 const controller = {
-    home: (req, res)=>{
+	home: (req, res) => {
 
-    },
-    detail: (req, res)=>{
-         
-		const peliculas = JSON.parse(fs.readFileSync(peliculasFilePath,'utf-8'));
-		
-        const id = req.params.id;
-        const peliculaId  = peliculas.find(pelicula=>{
-            return pelicula.id == id;
-        });
+	},
+	detail: (req, res) => {
+
+		const peliculasFilePath = path.join(__dirname, '../data/dataPeliculas.json');
+		const peliculas = JSON.parse(fs.readFileSync(peliculasFilePath, 'utf-8'));
+
+		const id = req.params.id;
+		const peliculaId = peliculas.find(pelicula => {
+			return pelicula.id == id;
+		});
 		// console.log(peliculaId)
-        res.render('productDetail', {pelicula: peliculaId})
-    },
+		res.render('productDetail', { pelicula: peliculaId })
+	},
 
-    create: (req, res) => {
+	create: (req, res) => {
 		res.render("cargaProductos")
 	},
 
-    postCreate: (req, res) => {
+	postCreate: (req, res) => {
+		const peliculasFilePath = path.join(__dirname, '../data/dataPeliculas.json');
+		const peliculas = JSON.parse(fs.readFileSync(peliculasFilePath, 'utf-8'));
 		const data = req.body;
 		// console.log(data); // nueva peli
 		// console.log(req.file); //imagen
@@ -36,8 +39,8 @@ const controller = {
 			imagen: data.imagen,
 			trailer: data.trailer,
 			anio: data.anio,
-            categoria: data.categoria,
-			imagen: req.file ? path.join('/images/', req.file.filename) : "/images/default.jpg"
+			categoria: data.categoria,
+			imagen: req.file ? '/images/' + req.file.filename : "/images/default.jpg"
 		}
 		peliculas.push(nuevoProducto);
 
@@ -45,18 +48,20 @@ const controller = {
 		res.redirect("/")
 	},
 	edit: (req, res) => {
+		const peliculasFilePath = path.join(__dirname, '../data/dataPeliculas.json');
 		const peliculas = JSON.parse(fs.readFileSync(peliculasFilePath, 'utf-8'));
 
 		let id = req.params.id;
-		let peliAEditar = peliculas.find(pelicula =>{
-			return pelicula.id == id	
+		let peliAEditar = peliculas.find(pelicula => {
+			return pelicula.id == id
 		});
 
-		res.render('editarProductos', {pelicula: peliAEditar})
+		res.render('editarProductos', { pelicula: peliAEditar })
 	},
 	putEdit: (req, res) => {
 
 		const data = req.body;
+		const peliculasFilePath = path.join(__dirname, '../data/dataPeliculas.json');
 		const peliculas = JSON.parse(fs.readFileSync(peliculasFilePath, 'utf-8'));
 
 		let peliAEditar = peliculas.find(product => {
@@ -70,7 +75,7 @@ const controller = {
 			// imagen: data.imagen,
 			trailer: data.trailer,
 			anio: data.anio,
-            categoria: data.categoria,
+			categoria: data.categoria,
 			imagen: req.file ? path.join('/images/', req.file.filename) : peliAEditar.imagen,
 		}
 
@@ -83,9 +88,10 @@ const controller = {
 		fs.writeFileSync(peliculasFilePath, JSON.stringify(peliculas, null, " "));
 		res.redirect("/");
 	},
-	delete : (req, res) => {
+	delete: (req, res) => {
 		const id = req.params.id;
 
+		const peliculasFilePath = path.join(__dirname, '../data/dataPeliculas.json');
 		const peliculas = JSON.parse(fs.readFileSync(peliculasFilePath, 'utf-8'));
 
 		let peliculasFiltradas = peliculas.filter(pelicula => {
