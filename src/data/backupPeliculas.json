@@ -89,4 +89,13 @@
         "anio": "2022",
         "categoria": "Comedia"
     }
+    {
+        "id": 11,
+        "titulo": "Lilo y Stitch",
+        "descripcion": "Una mujer china inmigrante debe salvar el mundo explorando los infinitos universos paralelos que existen.",
+        "trailer": "https://www.youtube.com/embed/UiN9e-y2P7g",
+        "anio": "2002",
+        "categoria": "Animación",
+        "imagen": "/images/lilo"
+     },
 ]
