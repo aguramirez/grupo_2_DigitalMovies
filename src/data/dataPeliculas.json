@@ -78,7 +78,7 @@
   "imagen": "/images/theblackphone.jpg",
   "trailer": "https://www.youtube.com/embed/XhcEnHDKHco",
   "anio": "2022",
-  "categoria": "Horror"
+  "categoria": "Terror"
  },
  {
   "id": 10,
@@ -88,5 +88,230 @@
   "anio": "2022",
   "categoria": "Comedia",
   "imagen": "/images/everythingeverywhereallatonce.jpg"
- }
+ },
+ {
+  "id": 11,
+  "titulo": "Elementos ",
+  "descripcion": "En una ciudad donde los residentes del fuego, el agua, la tierra y el aire viven juntos, una joven apasionada y un chico que se deja llevar por la corriente descubrirán algo elemental: cuánto tienen en común.",
+  "imagen": "/images/elementos.jpg",
+  "trailer": "https://www.youtube.com/embed/BTEPMz-xNgw?si=x5aIZS09SFAff1Zf",
+  "anio": "2023",
+  "categoria": "Animación"
+ },
+ {
+  "id": 12,
+  "titulo": "Lilo y Stitch",
+  "descripcion": "Lilo es una niña hawaiana que se siente sola y decide adoptar un perro muy feo al que llama Stitch. Stitch sería la mascota perfecta... si no fuera en realidad un experimento genético que ha escapado de un planeta alienígena y que ha aterrizado en la tierra por casualidad. Con su amor y su inquebrantable fe en el ohana (el concepto hawaiano de la familia), Lilo termina conquistando el corazón de Stitch y le ofrece algo que el original perro nunca pensó tener: un hogar.",
+  "imagen": "/images/pelicula-1697978612674.jpg",
+  "trailer": "https://www.youtube.com/embed/8A9GjPKiR7Y?si=tXeb_6J67hoJ84FO",
+  "anio": "2002",
+  "categoria": "Animación"
+ },
+ {
+  "id": 13,
+  "titulo": "El exorcista: Creyente",
+  "descripcion": "El padre de un niño poseído busca la ayuda de Chris MacNeil, cuya hija Regan sobrevivió a una posesión similar en la década de 1970.",
+  "imagen": "/images/pelicula-1697978848525.jpg",
+  "trailer": "https://www.youtube.com/embed/DWk4XS0xUtI?si=UMZ1kGmfOFGHh-NG",
+  "anio": "2023",
+  "categoria": "Terror"
+ },
+ {
+  "id": 14,
+  "titulo": " Saw X",
+  "descripcion": "Armado con un nuevo propósito, el infame asesino en serie regresa a su trabajo, dándole la vuelta a los estafadores en su forma visceral característica a través de trampas tortuosas, trastornadas e ingeniosas.",
+  "imagen": "/images/pelicula-1697979006729.jpg",
+  "trailer": "https://www.youtube.com/embed/vEn_IB95oRg?si=kJewHHL3tPvHFxAI",
+  "anio": "2023",
+  "categoria": "Terror"
+ },
+ {
+  "id": 15,
+  "titulo": "El Justiciero: Capítulo final",
+  "descripcion": "Desde que renunció a su vida como asesino del gobierno, Robert McCall ha luchado para reconciliarse con las cosas horribles que ha hecho en el pasado y encuentra un extraño consuelo en hacer justicia en nombre de los oprimidos. Mientras se encuentra en su casa en el sur de Italia, descubre que sus nuevos amigos están bajo el control de los jefes del crimen local.",
+  "imagen": "/images/pelicula-1697979342116.jpg",
+  "trailer": "https://www.youtube.com/embed/E5wgTo4roJU?si=uIKJfSfmMcdCo4G8",
+  "anio": "2023",
+  "categoria": "Acción"
+ },
+ {
+  "id": 16,
+  "titulo": "La Monja",
+  "descripcion": "1956, Francia. Un sacerdote es asesinado, un mal se extiende y la hermana Irene se enfrenta de nuevo a la fuerza malévola de Valak, la monja demonio.",
+  "imagen": "/images/pelicula-1697979490357.jpg",
+  "trailer": "https://www.youtube.com/embed/dHPzbu3jjOs",
+  "anio": "2023",
+  "categoria": "Terror"
+ },
+ {
+    "id": 17,
+    "titulo": "Kraken y Sirenas",
+    "descripcion": "La escuela se vuelve aún más incómoda cuando la tímida adolescente Ruby Gillman descubre que desciende de la reina de los krakens. Sin embargo, no sabe que las sirenas pretenden arrebatarles la autoridad de los océanos y ella es la clave del plan.",
+    "imagen": "/images/krakenysirenas.jpg",
+    "trailer": "https://www.youtube.com/embed/9njwwO5eXnA?si=oX7FNgeOJHmzRrgE",
+    "anio": "2023",
+    "categoria": "Animación"
+},
+{
+    "id": 18,
+    "titulo": "La Patrulla Canina: La superpelícula",
+    "descripcion": "Con el destino de Ciudad Aventura al filo del abismo, los Poderosos Cachorros tendrán que detener a los supervillanos antes de que sea demasiado tarde, y Skye descubrirá que hasta la más pequeña del equipo puede ser la que determine el resultado.",
+    "imagen": "/images/patrullacanina.jpg",
+    "trailer": "https://www.youtube.com/embed/-RfwjPfquUg?si=UGsQkXPVGJIPCqpj",
+    "anio": "2023",
+    "categoria": "Animación"
+},
+{
+    "id": 19,
+    "titulo": "Háblame",
+    "descripcion": "La solitaria adolescente Mia se engancha a la emoción de invocar espíritus utilizando una mano embalsamada, pero cuando se enfrenta a un alma que dice ser su madre muerta, desata una plaga de fuerzas sobrenaturales y se debate entre decidir en quién puede confiar: en los vivos o en los muertos.",
+    "imagen": "/images/hablame.jpg",
+    "trailer": "https://www.youtube.com/embed/Jyd4ga_6MTM?si=someS0and5H4zWWM",
+    "anio": "2023",
+    "categoria": "Terror"
+},
+{
+    "id": 20,
+    "titulo": "La sirenita",
+    "descripcion": "Ariel es una joven y soñadora sirena, hija del Rey Tritón, que está cansada de su vida como princesa bajo el mar. Su mayor deseo es abandonar el fondo marino y tener una vida normal y apacible en la superficie. La bruja Úrsula descubre su anhelo y, por eso, a cambio de su preciosa voz le ofrece un cuerpo totalmente humano. Ariel acepta, movida por su pasión por conocer el mundo terrestre y porque está enamorada de un apuesto príncipe humano. Pero las cosas no serán fáciles para Ariel, ya que la bruja Úrsula esconde oscuras intenciones.",
+    "imagen": "/images/lasirenita.jpg",
+    "trailer": "https://www.youtube.com/embed/8LECfkm4fJA?si=GE57seRInUsEEJH1",
+    "anio": "2023",
+    "categoria": "Fantasia"
+},
+{
+    "id": 21,
+    "titulo": "No se aceptan devoluciones",
+    "descripcion": "Valentín, un tipo mujeriego, soltero y egoísta, de repente, tiene que hacerse cargo de una hija a la que no conocía, fruto de una aventura ocasional. Decidido a devolverle la niña a su madre, emprende un viaje con ella a Los Ángeles, pero la convivencia con la niña acaba transformándolo en lo más íntimo",
+    "imagen": "/images/noseaceotandevoluciones.jpg",
+    "trailer": "https://www.youtube.com/embed/Ua5qcs7RHiY?si=WmsUcPLJJ5l_Zb3H",
+    "anio": "2013",
+    "categoria": "Comedia"
+},
+{
+    "id": 22,
+    "titulo": "El sonido de la libertad",
+    "descripcion": "Narra la historia de Tim Ballard, un ex Agente de Seguridad Nacional de Estados Unidos que dejó su trabajo para dedicar su vida, sumergiéndose en el submundo del tráfico de personas a lo largo de Latinoamérica, a intentar salvar las vidas de cientos de niños.",
+    "imagen": "/images/elsonidodelalibertad.jpg",
+    "trailer": "https://www.youtube.com/embed/H82uvLvszQ0?si=w7Wo5CKZV-LPublk",
+    "anio": "2023",
+    "categoria": "Acción"
+},
+{
+    "id": 23,
+    "titulo": "El Justiciero 3",
+    "descripcion": "Desde que renunció a su vida como asesino del gobierno, Robert McCall ha luchado para reconciliarse con las cosas horribles que ha hecho en el pasado y encuentra un extraño consuelo en hacer justicia en nombre de los oprimidos. Mientras se encuentra en su casa en el sur de Italia, descubre que sus nuevos amigos están bajo el control de los jefes del crimen local. A medida que los acontecimientos comienzan a complicarse, McCall entiende lo que tiene que hacer: convertirse en el protector de sus amigos enfrentándose a la mafia.",
+    "imagen": "/images/eljusticiero.jpg",
+    "trailer": "https://www.youtube.com/embed/_-EkaAXbk_w?si=mc5H_kyKS6NSqtqi",
+    "anio": "2023",
+    "categoria": "Acción"
+},
+{
+    "id": 24,
+    "titulo": "Pinocho",
+    "descripcion": "Versión en acción real del aclamado cuento sobre una marioneta que se embarca en una trepidante aventura para convertirse en un niño de verdad. La historia también presenta a otros personajes, como Gepetto, el carpintero que fabrica a Pinocho y lo trata como a su propio hijo; Pepito Grillo, que hace las veces de guía y “conciencia” de Pinocho; el Hada Azul; el Honrado Juan; la gaviota Sofía, y el cochero.",
+    "imagen": "/images/pinocho.jpg",
+    "trailer": "https://www.youtube.com/embed/TITv1TNi5mI?si=u_6nX3W89CZwPmJl",
+    "anio": "2023",
+    "categoria": "Fantasia"
+},
+{
+    "id": 25,
+    "titulo": "Avatar: El Camino del Agua",
+    "descripcion": "Versión en acción real del aclamado cuento sobre una marioneta que se embarca en una trepidante aventura para convertirse en un niño de verdad. La historia también presenta a otros personajes, como Gepetto, el carpintero que fabrica a Pinocho y lo trata como a su propio hijo; Pepito Grillo, que hace las veces de guía y “conciencia” de Pinocho; el Hada Azul; el Honrado Juan; la gaviota Sofía, y el cochero.",
+    "imagen": "/images/avatarelcaminodelagua.jpg",
+    "trailer": "https://www.youtube.com/embed/u0hxjdWG84k?si=poWg0BfYof9X41BF",
+    "anio": "2022",
+    "categoria": "Fantasia"
+},
+{
+    "id": 26,
+    "titulo": "¿Y dónde están las rubias?",
+    "descripcion": "Dos ambiciosos -pero con poca fortuna- agentes del FBI de color (Shawn y Marlon Wayans) se hacen pasar por mujeres, novatas en la alta sociedad, en el exclusivo complejo Hamptons para investigar un círculo de secuestros. Pero mientras preparan su actuación en el mayor acontecimiento social del año se encuentran que irrumpir en la alta sociedad es mucho más duro de lo que parecía.",
+    "imagen": "/images/dondeestanlasrubias.jpg",
+    "trailer": "https://www.youtube.com/embed/aeVkbNka9HM?si=6pnW__I9S2_0SAP3",
+    "anio": "2004",
+    "categoria": "Comedia"
+},
+{
+    "id": 27,
+    "titulo": "El Angel",
+    "descripcion": "Debido a su apariencia angelical, la prensa llama a Carlitos El ángel de la muerte. Llama la atención por su belleza, y se convierte en una celebridad de la noche a la mañana. En total se cree que cometió más de cuarenta robos y once asesinatos. Hoy, después de más de cuarenta y cinco años en la cárcel, Carlos Robledo Puch es el preso que más tiempo lleva en prisión en la historia de Argentina.",
+    "imagen": "/images/elangel.jpg",
+    "trailer": "https://www.youtube.com/embed/8xC09nRwvEs?si=tR8fsqufCOJkfKQr",
+    "anio": "2018",
+    "categoria": "Biografia"
+},
+{
+    "id": 28,
+    "titulo": "Bohemian Rhapsody",
+    "descripcion": "Freddie Mercury desafía los estereotipos y se convierte en uno de los vocalistas más reconocidos de la música mundial. Después de dejar la banda Queen para seguir una carrera como solista, Mercury se reúne con la banda para dar una de las mejores actuaciones en la historia del rock 'n' roll.",
+    "imagen": "/images/bohemianrhapsody.jpg",
+    "trailer": "https://www.youtube.com/embed/LTAIlPsMOs4?si=sKtBbchaCLgAubn6",
+    "anio": "2018",
+    "categoria": "Biografia"
+},
+{
+    "id": 29,
+    "titulo": "Son Como Niños",
+    "descripcion": "Cinco amigos vuelven a verse después de treinta años para asistir al funeral de su entrenador de baloncesto de la infancia. Con sus esposas e hijos a cuestas, deciden pasar el fin de semana del 4 de julio en una casa cerca de un lago, en la que muchos años atrás habían celebrado la conquista de un campeonato. Curiosamente, esos días de convivencia les harán comprender que, a pesar de que ya son personas adultas, en realidad no han crecido.",
+    "imagen": "/images/soncomoniños.jpg",
+    "trailer": "https://www.youtube.com/embed/yMEDiKD7cyE?si=-CNAoCMwZVnf-h4N",
+    "anio": "2010",
+    "categoria": "Comedia"
+},
+{
+    "id": 30,
+    "titulo": "La teoría del todo",
+    "descripcion": "La película gira en torno a la vida de Stephen Hawking, el importante teórico y divulgador científico que cambió la historia de la ciencia y la tecnología moderna para siempre. La película se centrará en la relación que mantuvo el británico con Jane Wilde, su primera mujer, con quien contrajo matrimonio después de que le diagnosticaran una enfermedad por la que no le quedaban más de dos años de vida.",
+    "imagen": "/images/lateoriadeltodo.jpg",
+    "trailer": "https://www.youtube.com/embed/aHW4pleEVJY?si=eIfTeAJyiuU7oaV5",
+    "anio": "2014",
+    "categoria": "Biografia"
+},
+{
+    "id": 31,
+    "titulo": "Criminales en el mar",
+    "descripcion": "Unos recién casados estadounidenses que visitan Europa en su luna de miel, quedan atrapados en el misterio de un asesinato después de presenciar un crimen.",
+    "imagen": "/images/criminalesenelmar.jpg",
+    "trailer": "https://www.youtube.com/embed/R8HZeYfJnNU?si=pRpGUkl9gcMfPKkc",
+    "anio": "2023",
+    "categoria": "Comedia"
+},
+{
+    "id": 32,
+    "titulo": "Rubia",
+    "descripcion": "Basada en el bestseller de la cinco veces finalista al Premio Pulitzer, Joyce Carol Oates, BLONDE es la historia personal audazmente reinventada de la sex symbol más famosa del mundo, Marilyn Monroe. La película es un retrato ficticio de la modelo, actriz y cantante durante los años 50 y 60, contada a través de la mirada moderna de la cultura de las celebridades.",
+    "imagen": "/images/rubia.jpg",
+    "trailer": "https://www.youtube.com/embed/4oPRYJePoKk?si=jNK0jPpjOhVUu7CR",
+    "anio": "2022",
+    "categoria": "Biografia"
+},
+{
+    "id": 33,
+    "titulo": "Las Nadadoras",
+    "descripcion": "Una historia del viaje milagroso realizado por las hermanas nadadoras Yusra y Sarah Mardini que huyeron como refugiadas de la Siria devastada por la guerra para vivir una nueva vida en Europa y la oportunidad de competir en los Juegos Olímpicos de Río de 2016.",
+    "imagen": "/images/lasnadadoras.jpg",
+    "trailer": "https://www.youtube.com/embed/B5aR3i3Uh0E?si=-LNGZBtmkhVld-Lp",
+    "anio": "2022",
+    "categoria": "Ficcion Historica"
+},
+{
+    "id": 34,
+    "titulo": "Sin novedad en el frente",
+    "descripcion": "Las aterradoras experiencias y la angustia de un joven soldado alemán en el frente occidental durante la Primera Guerra Mundial.",
+    "imagen": "/images/sinovedadesalfrente.jpg",
+    "trailer": "https://www.youtube.com/embed/EBk1lXQ7rcY?si=P142hifNfuuGxw-u",
+    "anio": "2022",
+    "categoria": "Ficcion Historica"
+},
+{
+    "id": 35,
+    "titulo": "Madame Curie",
+    "descripcion": "Cuenta la historia de la ganadora del Premio Nobel Marie Curie y sus extraordinarios descubrimientos científicos, a través del prisma de su matrimonio con su esposo Pierre, y los efectos sísmicos y transformadores que su descubrimiento del radio tuvo en el siglo XX.",
+    "imagen": "/images/madamecurie.jpg",
+    "trailer": "https://www.youtube.com/embed/l0TMezN5etQ?si=QvBSYn-CqEFWDJ7k",
+    "anio": "2020",
+    "categoria": "Ficcion Historica"
+}
 ]
