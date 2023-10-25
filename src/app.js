@@ -3,6 +3,7 @@ const express = require('express');
 const app = express();
 const mainRoutes = require('./routes/mainRoutes');
 const productsRoutes = require('./routes/productsRoutes');
+const peliculasRoutes = require('./routes/peliculasRoutes')
 const userRoutes= require ('./routes/userRoutes')
 const cookieAuthMiddleware = require('./middlewares/cookieAuthMiddleware');
 
@@ -28,5 +29,8 @@ app.use('/', mainRoutes);
 app.use('/products', productsRoutes);
 app.use('/user', userRoutes);
 app.use(cookieAuthMiddleware);
+
+// CRUD nuevo
+app.use('/peliculas', peliculasRoutes);
 
 app.listen(3030, () => console.log('Servidor abierto'));
