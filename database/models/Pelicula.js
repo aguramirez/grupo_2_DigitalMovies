@@ -31,7 +31,7 @@ module.exports = (sequelize, dataTypes) => {
     }
     const Pelicula = sequelize.define(alias, cols, config);
 
-    Pelicula.associate = function(models) {
+   Pelicula.associate = function(models) {
         Pelicula.belongsTo(models.Categoria, {
             as: 'categoria',
             foreignKey: 'categoria_id'

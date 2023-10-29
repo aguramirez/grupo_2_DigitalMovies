@@ -3,7 +3,30 @@
     </head>
 
     <body>
-        <%- include('./partials/header')%>
+        <header>
+            <nav>
+                <div class="logo">
+                    <a href="/">
+                        <img src="/images/logo.png" alt="logo">
+                    </a>
+                </div>
+        
+                <input type="text" placeholder="Peliculas, Series, Cine">
+                <div class="botones-nav">
+                    <button>Series</button>
+                    <button>Entradas</button>
+                </div>
+                <div class="botones-usuario">
+                    <a href="/productCart"><i class="fa-solid fa-cart-shopping fa-xl" style="color: #ffffff;"></i></a>
+                    <a href="/user/register" class="register"><i class="fa-solid fa-circle-user fa-xl"
+                            style="color: #ffffff;"></i>Register</a>
+                    <a href="/user/login" class="register"><i class="fa-solid fa-circle-user fa-xl"
+                            style="color: #ffffff;"></i>Login</a>
+                    <a href="/user/users-list" class="register"><i class="fa-solid fa-circle-user fa-xl"
+                            style="color: #ffffff;"></i>Lista de usuarios</a>
+                </div>
+            </nav>
+        </header>
 
             <main>
                 <div class="filtros-izq">
@@ -17,11 +40,11 @@
                             <li>Accion</li> 
                             <li>Terror</li> 
                             <li>Animacion</li> 
-                        </a>  
+                        </a> 
                     </ul>
                 </div>
                 <div class="contenido">
-                    <h3>Destacadas</h3>
+                    <h3>Peliculas</h3>
                     <a class="add-producto" href="/peliculas/agregar">Agregar</a>
                     <div class="tarjetas">
                         <% peliculas.forEach(pelicula=> { %>
@@ -37,7 +60,7 @@
                                     tarjetas.forEach(function (tarjeta) {
                                         tarjeta.addEventListener("click", function () {
                                             let peliculaId = this.getAttribute("data-pelicula-id");
-                                            window.location.href = "/products/detail/" + peliculaId;
+                                            window.location.href = "/peliculas/" + peliculaId;
                                         });
                                     });
                                 </script>
