@@ -7,8 +7,8 @@
 
         <main>
             <h3><%= pelicula.titulo %></h3>
-            <a class="boton-editar" href="/products/<%= pelicula.id %>/edit">Editar</a>
-            <form action="/products/<%= pelicula.id %>?_method=DELETE" method="POST">
+            <a class="boton-editar" href="/peliculas/edit/<%= pelicula.id %>">Editar</a>
+            <form action="/peliculas/borrar/<%= pelicula.id %>" method="POST">
                 <button type="submit" class="boton-borrar">Eliminar</button>
             </form>
             <div class="portada-pelicula">

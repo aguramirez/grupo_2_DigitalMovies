@@ -5,7 +5,6 @@ const sequelize = db.Sequelize;
 const Categoria = db.Categoria;*/
 
 const peliculasController = {
-    
     list: (req, res) => {
         db.Pelicula.findAll({
             include: 'categoria'
@@ -14,16 +13,6 @@ const peliculasController = {
                 res.render('listaPeliculas',{peliculas})
             })        
     },
-    /*new: (req, res)=>{
-        db.Pelicula.findAll({
-            where: {
-                anio: {[sequelize.Op.eq ]: 2023}
-            }
-        })
-            .then((peliculas)=> {
-                res.render('listaPeliculas',{peliculas})
-            })
-    },*/
     detail: (req, res)=> {
         db.Pelicula.findByPk(req.params.id, {include :'categoria'})
             .then((pelicula)=>{
@@ -57,9 +46,35 @@ const peliculasController = {
         let pedidoPelicula= db.Pelicula.findByPk(req.params.id);
         let pedidoCategoria= db.Categoria.findAll();
         Promise.all([pedidoPelicula, pedidoCategoria])
-        .then((pelicula, categoria) =>{
-            res.render('editarProductos', {pelicula: pelicula, categoria: categoria})
+        .then(([pelicula, categoria]) =>{
+            res.render('editarProductos', {pelicula: pelicula, categorias: categoria})
         })
+    },
+    processoEditar: (req, res)=> {
+        db.Pelicula.update({
+            titulo: req.body.titulo,
+            trailer: req.body.trailer,
+            anio: req.body.anio,
+            descripcion: req.body.descripcion,
+            imagen: req.body.imagen,
+            categoria_id: req.body.categoria
+            
+        }, {
+            where : {
+                id: req.params.id
+            }
+        }
+        )
+        
+          res.redirect('/peliculas/' + req.params.id);
+    },
+    borrar : (req,res)=>{
+        db.Pelicula.destroy({
+            where : {
+                id: req.params.id
+            }
+        })
+        res.redirect('/peliculas')
     }
 
 }
