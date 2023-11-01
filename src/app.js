@@ -25,12 +25,12 @@ app.use(cookieParser());
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, '/views'));
 
-app.use('/', mainRoutes);
+app.use('/estrenos', mainRoutes);
 app.use('/products', productsRoutes);
 app.use('/user', userRoutes);
 app.use(cookieAuthMiddleware);
 
 // CRUD nuevo
-app.use('/peliculas', peliculasRoutes);
+app.use('/', peliculasRoutes);
 
 app.listen(3030, () => console.log('Servidor abierto'));

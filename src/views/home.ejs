@@ -20,7 +20,7 @@
                 </div>
                 <div class="contenido">
                     <h3>Destacadas</h3>
-                    <a class="add-producto" href="/peliculas/agregar">Agregar</a>
+                    <a class="add-producto" href="/agregar">Agregar</a>
                     <div class="tarjetas">
                         <% peliculas.forEach(pelicula=> { %>
                             <div class="tarjeta" style="background-image: url('<%= pelicula.imagen %>');"
@@ -35,7 +35,7 @@
                                     tarjetas.forEach(function (tarjeta) {
                                         tarjeta.addEventListener("click", function () {
                                             let peliculaId = this.getAttribute("data-pelicula-id");
-                                            window.location.href = "/products/detail/" + peliculaId;
+                                            window.location.href = "/" + peliculaId;
                                         });
                                     });
                                 </script>

@@ -10,7 +10,7 @@ const peliculasController = {
             include: 'categoria'
         })
             .then(function (peliculas) {
-                res.render('listaPeliculas',{peliculas})
+                res.render('home',{peliculas})
             })        
     },
     detail: (req, res)=> {
