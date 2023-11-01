@@ -37,7 +37,7 @@ nav input {
     margin: 10px;
 }
 
-.botones-nav button{
+.botones-nav a{
     display: block;
     background-color: #4CAF50;
     border: none;

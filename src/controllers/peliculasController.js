@@ -1,5 +1,6 @@
 const db = require("../../database/models");
 const sequelize = db.Sequelize;
+const path = require('path');
 
 /*const Pelicula = db.Pelicula;
 const Categoria = db.Categoria;*/
@@ -34,12 +35,13 @@ const peliculasController = {
             trailer: req.body.trailer,
             anio: req.body.anio,
             descripcion: req.body.descripcion,
-            imagen: req.body.imagen,
+            imagen: req.file ? '/images/' + req.file.filename : "/images/default.jpg",
             categoria_id: req.body.categoria
             
         })
         
-          res.redirect('/peliculas');
+          res.render('home');
+          res.redirect('/');
        
     },
     editar: (req, res) => {
@@ -56,7 +58,7 @@ const peliculasController = {
             trailer: req.body.trailer,
             anio: req.body.anio,
             descripcion: req.body.descripcion,
-            imagen: req.body.imagen,
+            imagen: req.file ? path.join('/images/', req.file.filename) : req.body.imagen,
             categoria_id: req.body.categoria
             
         }, {
@@ -66,7 +68,7 @@ const peliculasController = {
         }
         )
         
-          res.redirect('/peliculas/' + req.params.id);
+          res.redirect('/edit/' + req.params.id);
     },
     borrar : (req,res)=>{
         db.Pelicula.destroy({
@@ -74,7 +76,7 @@ const peliculasController = {
                 id: req.params.id
             }
         })
-        res.redirect('/peliculas')
+        res.redirect('/')
     }
 
 }
