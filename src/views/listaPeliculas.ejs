@@ -3,42 +3,14 @@
     </head>
 
     <body>
-        <header>
-            <nav>
-                <div class="logo">
-                    <a href="/">
-                        <img src="/images/logo.png" alt="logo">
-                    </a>
-                </div>
-        
-                <input type="text" placeholder="Peliculas, Series, Cine">
-                <div class="botones-nav">
-                    <button>Series</button>
-                    <button>Entradas</button>
-                </div>
-                <div class="botones-usuario">
-                    <a href="/productCart"><i class="fa-solid fa-cart-shopping fa-xl" style="color: #ffffff;"></i></a>
-                    <a href="/user/register" class="register"><i class="fa-solid fa-circle-user fa-xl"
-                            style="color: #ffffff;"></i>Register</a>
-                    <a href="/user/login" class="register"><i class="fa-solid fa-circle-user fa-xl"
-                            style="color: #ffffff;"></i>Login</a>
-                    <a href="/user/users-list" class="register"><i class="fa-solid fa-circle-user fa-xl"
-                            style="color: #ffffff;"></i>Lista de usuarios</a>
-                </div>
-            </nav>
-        </header>
-
+        <%- include('./partials/header')%>
             <main>
                 <div class="filtros-izq">
                     <h3>Categorias</h3>
                     <ul>
-                        <li>Ficcion</li>
-                        <li>Biografia</li>
-                        <li>Comedia</li>
-                        <li>Fantasia</li> 
-                        <li>Accion</li> 
-                        <li>Terror</li> 
-                        <li>Animacion</li> 
+                        <% categorias.forEach(categoria => { %>
+                          <li><a  href="/peliculas/categoria/<%= categoria.id %>"><%= categoria.nombre%></a></li>
+                        <% }); %>
                     </ul>
                 </div>
                 <div class="contenido">

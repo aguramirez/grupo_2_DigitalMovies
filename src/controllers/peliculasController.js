@@ -6,12 +6,16 @@ const Categoria = db.Categoria;*/
 
 const peliculasController = {
     list: (req, res) => {
-        db.Pelicula.findAll({
+        db.Categoria.findAll()
+        .then((categorias)=>{
+            db.Pelicula.findAll({
             include: 'categoria'
         })
             .then(function (peliculas) {
-                res.render('listaPeliculas',{peliculas})
-            })        
+                res.render('listaPeliculas',{peliculas, categorias})
+            })
+        })
+                
     },
     detail: (req, res)=> {
         db.Pelicula.findByPk(req.params.id, {include :'categoria'})
@@ -75,6 +79,21 @@ const peliculasController = {
             }
         })
         res.redirect('/peliculas')
+    }, 
+    filtro: (req, res)=>{
+        const cat_id = req.params.id
+        db.Categoria.findAll()
+        .then((categorias)=>{
+            db.Pelicula.findAll({
+            where :{
+                categoria_id : cat_id
+            }
+        })
+        .then((peliculas)=>{
+            res.render('filtroPeliculas', {peliculas, categorias, cat_id})
+        })
+        })
+        
     }
 
 }

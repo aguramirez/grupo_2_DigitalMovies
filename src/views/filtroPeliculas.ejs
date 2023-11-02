@@ -1,0 +1,46 @@
+<%- include('./partials/head') %>
+    <link rel="stylesheet" type="text/css" href="/css/index.css">
+    </head>
+
+    <body>
+        <%- include('./partials/header')%>
+        <main>
+            <div class="filtros-izq">
+                <h3>Categorias</h3>
+                <ul>
+                    <% categorias.forEach(categoria => { %>
+                      <li><a href="/peliculas/categoria/<%= categoria.id %>"><%= categoria.nombre%></li></a>
+                    <% }); %>
+                </ul>
+            </div>
+            <div class="contenido">
+                <% categorias.forEach(categoria => { %>
+                    <% if (categoria.id == cat_id) { %>
+                        <h3><%= categoria.nombre %></h3>
+                    <% } %>
+                <% }) %>
+                
+                <div class="tarjetas">
+                    <% peliculas.forEach(pelicula=> { %>
+                        <div class="tarjeta" style="background-image: url('<%= pelicula.imagen %>');"
+                            data-pelicula-id="<%= pelicula.id %>">
+                            <p class="tituloPeli">
+                                <%= pelicula.titulo %>
+                            </p>
+                        </div>
+                        <% }); %>
+                            <script>
+                                let tarjetas = document.querySelectorAll(".tarjeta");
+                                tarjetas.forEach(function (tarjeta) {
+                                    tarjeta.addEventListener("click", function () {
+                                        let peliculaId = this.getAttribute("data-pelicula-id");
+                                        window.location.href = "/peliculas/" + peliculaId;
+                                    });
+                                });
+                            </script>
+
+                </div>
+            </div>
+        </main>
+        <%- include('./partials/footer') %>
+</body>
