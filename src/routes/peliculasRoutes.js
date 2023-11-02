@@ -28,6 +28,10 @@ router.post('/edit/:id', peliculasController.processoEditar)
 
 router.post('/borrar/:id', peliculasController.borrar)
 
+// categorias
+
+router.get('/categoria/:id', peliculasController.filtro)
+
 
 
 

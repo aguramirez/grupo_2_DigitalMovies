@@ -23,6 +23,7 @@ nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    height: 125px;
 }
 
 nav input {
@@ -204,6 +205,17 @@ input[type="submit"] {
     display: none;
     background-color: #f1f1f1;
     padding: 10px;
+    margin-right: 10px;
+}
+.filtros-izq ul{
+    list-style-type: none;
+}
+.filtros-izq li{
+    margin-left: -40px;
+}
+.filtros-izq a{
+    text-decoration: none;
+    color: #333;
 }
 
 
@@ -323,6 +335,7 @@ footer i{
 
     .filtros-izq {
         display: none;
+        text-decoration: none;
     }
 
     .tarjeta{
@@ -347,6 +360,7 @@ footer i{
         display: block;
         background-color: #f1f1f1;
         padding: 10px;
+        text-decoration: none;
     }
 
     .filtros-izq li{

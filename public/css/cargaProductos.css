@@ -20,9 +20,10 @@ nav img {
 }
 
 nav {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 125px;
 }
 
 nav input {
@@ -37,7 +38,7 @@ nav input {
     margin: 10px;
 }
 
-.botones-nav button{
+.botones-nav a{
     display: block;
     background-color: #4CAF50;
     border: none;

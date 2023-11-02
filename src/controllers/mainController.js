@@ -1,20 +1,25 @@
 const fs =require ('fs');
 const path = require('path');
 const db = require("../../database/models");
-const sequelize = db.Sequelize;
-
+const sequelize = db.Sequelize
 //const peliculasFilePath= path.join(__dirname,'../data/dataPeliculas.json');
+
 
 const controller = {
     estrenos: (req, res)=>{
-        db.Pelicula.findAll({
+        db.Categoria.findAll()
+        .then((categorias)=>{
+            db.Pelicula.findAll({
+            include: 'categoria',
             where: {
                 anio: {[sequelize.Op.eq ]: 2023}
             }
         })
             .then((peliculas)=> {
-                res.render('home',{peliculas})
+                res.render('home',{peliculas, categorias})
             })
+        })
+        
     },
     /*home: (req, res) => {
         const peliculas = JSON.parse(fs.readFileSync(peliculasFilePath,'utf-8'))

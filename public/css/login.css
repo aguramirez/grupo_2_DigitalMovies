@@ -20,9 +20,10 @@ nav img {
 }
 
 nav {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 125px;
 }
 
 nav input {

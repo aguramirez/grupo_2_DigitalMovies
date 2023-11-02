@@ -8,22 +8,18 @@
             <main>
                 <div class="filtros-izq">
                     <h3>Categorias</h3>
-                    <ul>
-                            <li>Ficcion</li>
-                            <li>Biografia</li>
-                            <li>Comedia</li>
-                            <li>Fantasia</li> 
-                            <li>Accion</li> 
-                            <li>Terror</li> 
-                            <li>Animacion</li>  
-                    </ul>
+                        <ul>
+                            <% categorias?.forEach(categoria => { %>
+                              <li><a href="/categoria/<%= categoria?.id %>"><%= categoria?.nombre%></li></a>
+                            <% }); %>
+                        </ul>
                 </div>
                 <div class="contenido">
                     <h3>Destacadas</h3>
                     <a class="add-producto" href="/agregar">Agregar</a>
                     <div class="tarjetas">
-                        <% peliculas.forEach(pelicula=> { %>
-                            <div class="tarjeta" style="background-image: url('<%= pelicula.imagen %>');"
+                        <% peliculas?.forEach(pelicula=> { %>
+                            <div class="tarjeta" style="background-image: url('<%= pelicula?.imagen %>');"
                                 data-pelicula-id="<%= pelicula.id %>">
                                 <p class="tituloPeli">
                                     <%= pelicula.titulo %>

@@ -7,27 +7,31 @@ const Categoria = db.Categoria;*/
 
 const peliculasController = {
     list: (req, res) => {
-        db.Pelicula.findAll({
-            include: 'categoria'
+        db.Categoria.findAll()
+        .then((categorias)=>{
+            db.Pelicula.findAll({
+            include: 'categoria',
         })
-            .then(function (peliculas) {
-                res.render('home',{peliculas})
-            })        
+            .then((peliculas)=> {
+                res.render('home',{peliculas, categorias})
+            })
+        })
+        
     },
-    detail: (req, res)=> {
-        db.Pelicula.findByPk(req.params.id, {include :'categoria'})
-            .then((pelicula)=>{
-                res.render('productDetail', {pelicula:pelicula});
+    detail: (req, res) => {
+        db.Pelicula.findByPk(req.params.id, { include: 'categoria' })
+            .then((pelicula) => {
+                res.render('productDetail', { pelicula: pelicula });
             })
 
     },
     crear: (req, res) => {
         db.Categoria.findAll()
-        
-        .then((categorias)=>{
-            res.render('cargaProductos', {categorias})
-        })
-        
+
+            .then((categorias) => {
+                res.render('cargaProductos', { categorias })
+            })
+
     },
     procesoCrear: (req, res) => {
         db.Pelicula.create({
@@ -37,22 +41,22 @@ const peliculasController = {
             descripcion: req.body.descripcion,
             imagen: req.file ? '/images/' + req.file.filename : "/images/default.jpg",
             categoria_id: req.body.categoria
-            
+
         })
-        
-          res.render('home');
-          res.redirect('/');
-       
+
+        res.render('home');
+        res.redirect('/');
+
     },
     editar: (req, res) => {
-        let pedidoPelicula= db.Pelicula.findByPk(req.params.id);
-        let pedidoCategoria= db.Categoria.findAll();
+        let pedidoPelicula = db.Pelicula.findByPk(req.params.id);
+        let pedidoCategoria = db.Categoria.findAll();
         Promise.all([pedidoPelicula, pedidoCategoria])
-        .then(([pelicula, categoria]) =>{
-            res.render('editarProductos', {pelicula: pelicula, categorias: categoria})
-        })
+            .then(([pelicula, categoria]) => {
+                res.render('editarProductos', { pelicula: pelicula, categorias: categoria })
+            })
     },
-    processoEditar: (req, res)=> {
+    processoEditar: (req, res) => {
         db.Pelicula.update({
             titulo: req.body.titulo,
             trailer: req.body.trailer,
@@ -60,23 +64,38 @@ const peliculasController = {
             descripcion: req.body.descripcion,
             imagen: req.file ? path.join('/images/', req.file.filename) : req.body.imagen,
             categoria_id: req.body.categoria
-            
+
         }, {
-            where : {
+            where: {
                 id: req.params.id
             }
         }
         )
-        
-          res.redirect('/edit/' + req.params.id);
+
+        res.redirect('/edit/' + req.params.id);
     },
-    borrar : (req,res)=>{
+    borrar: (req, res) => {
         db.Pelicula.destroy({
-            where : {
+            where: {
                 id: req.params.id
             }
         })
         res.redirect('/')
+    },
+    filtro: (req, res) => {
+        const cat_id = req.params.id
+        db.Categoria.findAll()
+            .then((categorias) => {
+                db.Pelicula.findAll({
+                    where: {
+                        categoria_id: cat_id
+                    }
+                })
+                    .then((peliculas) => {
+                        res.render('filtroPeliculas', { peliculas, categorias, cat_id })
+                    })
+            })
+
     }
 
 }
