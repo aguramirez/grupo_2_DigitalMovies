@@ -1,65 +1,67 @@
 <%- include('./partials/head') %>
-    <link rel="stylesheet" type="text/css" href="/css/cargaProductos.css">
-    </head>
+  <link rel="stylesheet" type="text/css" href="/css/cargaProductos.css">
+  </head>
 
-    <body>
-        <%- include('./partials/header') %>
-    </body>
+  <body>
+    <%- include('./partials/header') %>
+  </body>
 
-    <main>
-        <div class="container">
-            <!-- <div class="izq-card">
-              <form action="/products/create" method="POST" enctype="multipart/form-data">
-                <h2>Subir foto de portada</h2>
-                <div class="profile-picture">
-                  <label for="foto">
-                    <i class="fas fa-user-circle"></i>
-                    <span>Foto de portada</span>
-                  </label>
-                  <input type="file" id="foto" name="foto" accept="image/*">
-                </div>
-              </form>
-            </div> -->
-            <div class="der-card">
-              <form action="/agregar" method="POST" >
-                <h2>Agregar pelicula</h2>
-                <div class="input-group">
-                  <label for="titulo">Titulo</label>
-                  <input type="text" id="titulo" name="titulo" required>
-                </div>
-                <div class="input-group">
-                  <label for="trailer">Trailer URL</label>
-                  <input type="text" id="trailer" name="trailer" required>
-                </div>
-                <div class="input-group">
-                  <label for="anio">Año</label>
-                  <input type="text" id="anio" name="anio" required>
-                </div>
-                <div class="input-group">
-                  <label for="categoria">Categoria</label>
-                  <select name="categoria" id="categoria">
-                    <% for (let i= 0; i < categorias.length; i++){ %>
-                      <option value="<%= categorias[i].id %>">
-                        <%= categorias[i].nombre %>
-                      </option>
-                    <% } %> 
-                  </select>
-                </div>
-                <div class="input-group">
-                  <label for="descripcion">Descripcion</label>
-                  <textarea id="descripcion" name="descripcion" rows="8" cols="40" required></textarea>
-                </div>
-                <div class="input-group">
-                  <label for="imagen">
-                    <span>Imagen de portada</span>
-                  </label>
-                  <input type="file" id="imagen" name="imagen">
-                </div>
-                <a href="/" class="cancel-btn" >Cancelar</a>
-                <button type="submit">Agregar</button>
-              </form>
-            </div>
+  <main>
+    <div class="container">
+      <div class="der-card">
+        <ul class="errores">
+          <% if(locals.errores ) { %>
+            <% errores.forEach(error=> { %>
+              <li style="color: red;">
+                <%= error.msg %>
+              </li>
+              <% }) %>
+                <% } %>
+        </ul>
+        <form action="/agregar" method="POST" class="form">
+          <h2>Agregar pelicula</h2>
+          <div class="input-group">
+            <label for="titulo">Titulo</label>
+            <input type="text" id="titulo" name="titulo" value="<%= locals.oldData? oldData.titulo : null%>">
           </div>
-    </main>
-    <%- include('./partials/footer') %>
-</html> 
+          <div id="peliError">
+
+          </div>
+          <div class="input-group">
+            <label for="trailer">Trailer URL</label>
+            <input type="text" id="trailer" name="trailer" value="<%= locals.oldData? oldData.trailer : null%>">
+          </div>
+          <div class="input-group">
+            <label for="anio">Año</label>
+            <input type="text" id="anio" name="anio" value="<%= locals.oldData? oldData.anio : null%>">
+          </div>
+          <div class="input-group">
+            <label for="categoria">Categoria</label>
+            <select name="categoria" id="categoria">
+              <% for (let i=0; i < categorias.length; i++){ %>
+                <option value="<%= categorias[i].id %>">
+                  <%= categorias[i].nombre %>
+                </option>
+                <% } %>
+            </select>
+          </div>
+          <div class="input-group">
+            <label for="descripcion">Descripcion</label>
+            <textarea id="descripcion" name="descripcion" rows="8" cols="40" ></textarea>
+          </div>
+          <div class="input-group">
+            <label for="imagen">
+              <span>Imagen de portada</span>
+            </label>
+            <input type="file" id="imagen" name="imagen">
+          </div>
+          <a href="/" class="cancel-btn">Cancelar</a>
+          <button type="submit">Agregar</button>
+        </form>
+      </div>
+    </div>
+  </main>
+  <script src="cargaFormValidation.js"></script>
+  <%- include('./partials/footer') %>
+
+    </html>

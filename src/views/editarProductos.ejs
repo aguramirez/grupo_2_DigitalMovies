@@ -13,15 +13,30 @@
                 <h2>Editar pelicula</h2>
                 <div class="input-group">
                   <label for="titulo">Titulo</label>
-                  <input type="text" id="titulo" name="titulo" value="<%= pelicula.titulo %>" required>
+                  <input type="text" id="titulo" name="titulo" value="<%= pelicula.titulo %>">
+                  <% if (locals.errors && errors.titulo) { %>  
+                    <p style="color: red;">
+                     <%= errors.titulo.msg %>
+                    </p>
+                   <% } %>
                 </div>
                 <div class="input-group">
                   <label for="trailer">Trailer URL</label>
-                  <input type="text" id="trailer" name="trailer" value="<%= pelicula.trailer %>" required>
+                  <input type="text" id="trailer" name="trailer" value="<%= pelicula.trailer %>">
+                  <% if (locals.errors && errors.trailer) { %>  
+                    <p style="color: red;">
+                     <%= errors.trailer.msg %>
+                    </p>
+                   <% } %>
                 </div>
                 <div class="input-group">
                   <label for="anio">Año</label>
-                  <input type="text" id="anio" name="anio" value="<%= pelicula.anio %>" required>
+                  <input type="text" id="anio" name="anio" value="<%= pelicula.anio %>">
+                  <% if (locals.errors && errors.anio) { %>  
+                    <p style="color: red;">
+                     <%= errors.anio.msg %>
+                    </p>
+                   <% } %>
                 </div>
                 <div class="input-group">
                   <label for="categoria">Categoria</label>
@@ -35,7 +50,12 @@
                 </div>
                 <div class="input-group">
                   <label for="descripcion">Descripcion</label>
-                  <textarea id="descripcion" name="descripcion" rows="8" cols="40" required><%= pelicula.descripcion %></textarea>
+                  <textarea id="descripcion" name="descripcion" rows="8" cols="40" ><%= pelicula.descripcion %></textarea>
+                  <% if (locals.errors && errors.descripcion) { %>  
+                    <p style="color: red;">
+                     <%= errors.descripcion.msg %>
+                    </p>
+                   <% } %>
                 </div>
                 <div class="input-group">
                   <label for="imagen">

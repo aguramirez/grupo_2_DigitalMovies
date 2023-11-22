@@ -14,34 +14,6 @@ const controller = {
     register: (req, res) => {
         res.render('register.ejs');
     },
-
-    // processRegister: (req, res) => {
-    //     let resultValidation = validationResult(req);
-    //     if (resultValidation.errors.length > 0) {
-    //         return res.render('register', {
-    //             errors: resultValidation.mapped(),
-    //             oldData: req.body
-    //         });
-    //     } else {
-    //         const data = req.body;
-
-    //         const nuevoUsuario = {
-    //             id: usuarios[usuarios.length - 1].id + 1,
-    //             usuario: data.usuario,
-    //             email: data.email,
-    //             foto: data.foto,
-    //             password: bcrypt.hashSync(data.contrasena),
-    //             foto: req.file ? path.join('/images/avatars/', req.file.filename) : "/images/avatars/avatar-default.jpg"
-    //         }
-    //         usuarios.push(nuevoUsuario);
-
-    //         fs.writeFileSync(usuariosFilePath, JSON.stringify(usuarios, null, " "));
-
-    //         res.render('listaUsuarios.ejs', { usuarios: usuarios })
-
-    //         // res.redirect("/")
-    //     }
-    // },
     processRegister: (req, res) => {
         let resultValidation = validationResult(req);
         if (resultValidation.errors.length > 0) {
@@ -62,27 +34,12 @@ const controller = {
             res.redirect('/user/users-list')
         }
     },
-
-    // listarUsuarios: (req, res) => {
-    //     const usuariosFilePath = path.join(__dirname, '../data/users.json');
-    //     const usuarios = JSON.parse(fs.readFileSync(usuariosFilePath, 'utf-8'));
-    //     res.render('listaUsuarios.ejs', { usuarios: usuarios })
-    // },
     listarUsuarios: (req, res) => {
         db.Usuario.findAll()
         .then(usuarios => {
             res.render('listaUsuarios', {usuarios})
         })
     },
-
-    // verUsuario: (req, res) => {
-    //     const id = req.params.id;
-    //     const usuarioId = usuarios.find(usuario => {
-    //         return usuario.id == id;
-    //     });
-
-    //     res.render('userProfile', { usuario: usuarioId })
-    // },
     verUsuario: (req, res) => {
         db.Usuario.findByPk(req.params.id)
         .then(usuario => {
@@ -151,21 +108,6 @@ const controller = {
             }
         }
     },
-
-    // borrarUsuario: (req, res) => {
-    //     const id = req.params.id;
-
-    //     const usuariosFilePath = path.join(__dirname, '../data/users.json');
-    //     const usuarios = JSON.parse(fs.readFileSync(usuariosFilePath, 'utf-8'));
-
-    //     let usuariosFiltrados = usuarios.filter(usuario => {
-    //         return usuario.id != id
-    //     })
-
-    //     fs.writeFileSync(usuariosFilePath, JSON.stringify(usuariosFiltrados, null, " "));
-
-    //     res.render('listaUsuarios.ejs', { usuarios: usuariosFiltrados })
-    // },
     borrarUsuario: (req, res) => {
         db.Usuario.destroy({
             where: {
