@@ -5,12 +5,15 @@ const mainRoutes = require('./routes/mainRoutes');
 // const productsRoutes = require('./routes/productsRoutes');
 const peliculasRoutes = require('./routes/peliculasRoutes')
 const userRoutes= require ('./routes/userRoutes')
+const apiRoutes = require ('./routes/apiRoutes')
 const cookieAuthMiddleware = require('./middlewares/cookieAuthMiddleware');
 
 const methodOverride = require('method-override'); // Para poder usar PUT y DELETE
 const session = require('express-session');
 const cookieParser = require('cookie-parser');
 
+const cors = require('cors');
+app.use(cors());
 
 app.use(express.static('public'));
 
@@ -32,5 +35,8 @@ app.use(cookieAuthMiddleware);
 
 // CRUD nuevo
 app.use('/', peliculasRoutes);
+
+// react
+app.use('/api', apiRoutes);
 
 app.listen(3030, () => console.log('Servidor abierto'));
