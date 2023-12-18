@@ -10,7 +10,7 @@
                 <div class="card">
                     <form action="/user/login" method="POST">
                         <h2>Iniciar sesión</h2>
-                        <div class="input-group">
+                        <div class="input-group-1">
                             <label for="email">Email</label>
                             <input type="text" id="email" name="email" required>
                             <% if (locals.errors && errors.email) { %>
@@ -19,7 +19,7 @@
                                 </div>
                                 <% } %>
                         </div>
-                        <div class="input-group">
+                        <div class="input-group-1">
                             <label for="contrasena">Contraseña</label>
                             <input type="password" id="contrasena" name="contrasena" required>
                             <% if (locals.errors && errors.contrasena) { %>
@@ -28,13 +28,13 @@
                                 </div>
                                 <% } %>
                         </div>
-                        <div class="input-group">
-                            <input type="checkbox" id="olvido" name="olvido">
+                        <div class="input-group-2">
                             <label for="olvido">Olvidé mi contraseña</label>
+                            <input type="checkbox" id="olvido" name="olvido">
                         </div>
-                        <div class="input-group">
-                            <input type="checkbox" id="recuerdame" name="recuerdame">
+                        <div class="input-group-2">
                             <label for="recuerdame">Recuerdame</label>
+                            <input type="checkbox" id="recuerdame" name="recuerdame">
                         </div>
                         <button type="submit">Login</button>
                         <div class="social-buttons">

@@ -9,7 +9,7 @@ CREATE TABLE IF NOT EXISTS peliculas (
    anio INT NOT NULL,
    imagen  VARCHAR(255) NOT NULL,
    trailer VARCHAR(255),
-   categoria_id INT NOT NULL,categoria_id
+   categoria_id INT NOT NULL,
    PRIMARY KEY (id)
 );
 

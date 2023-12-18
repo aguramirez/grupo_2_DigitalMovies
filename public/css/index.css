@@ -13,6 +13,7 @@ header {
 .logo{
   width: 20%;
   margin: 10px;
+  position: relative;
 }
 
 nav img {
@@ -31,6 +32,7 @@ nav input {
     border: 1px solid #ccc;
     border-radius: 5px;
     width: 40%;
+    font-size: 14px;
 }
 
 .botones-nav{
@@ -48,6 +50,9 @@ nav input {
     border-radius: 5px;
     width: 100%;
     margin: 10px;
+    padding: 10px;
+    text-align: center;
+    transition-duration: 500ms;
 }
 
 .botones-usuario{
@@ -65,12 +70,18 @@ nav input {
 
 .register, .login{
     color: white;
+    text-align: center;
 }
 
-.botones-nav button:hover {
-    background-color: #45a049;
+.boton-nav:hover{
+    background-color: #306d33;
+    transition-duration: 500ms;
 }
 
+.fa-solid{
+    position: relative;
+    bottom: 5px;
+  }
 
 main {
     display: flex;
@@ -110,7 +121,7 @@ main {
   }
 
   .boton-editar:hover {
-    background-color: #2980b9;
+    background-color: #164564;
   }
 
   .boton-borrar{
@@ -125,10 +136,12 @@ main {
     cursor: pointer;
     margin: 10px;
     font-size: 16px;
+    transition-duration: 500ms;
   }
 
   .boton-borrar:hover {
-    background-color: #c72f3e;
+    background-color: #7e1e27;
+    transition-duration: 500ms;
   }
 
 .card-sinopsis {
@@ -166,8 +179,7 @@ label {
     margin-bottom: 5px;
 }
 
-select,
-input[type="date"] {
+select, input[type="date"] {
     width: 100%;
     padding: 5px;
     font-size: 16px;
@@ -195,10 +207,12 @@ input[type="submit"] {
     border-radius: 4px;
     border: none;
     cursor: pointer;
+    transition-duration: 500ms;
   }
 
   .add-producto:hover {
-    background-color: #2980b9;
+    background-color: #1d5981;
+    transition-duration: 500ms;
   }
 
 .filtros-izq {
@@ -221,6 +235,7 @@ input[type="submit"] {
 
 .contenido {
     padding: 10px;
+    width: 100%;
 }
 
 .listaDeUsuarios{
@@ -247,6 +262,7 @@ input[type="submit"] {
     cursor: pointer;
     margin: 10px;
     font-size: 16px;
+    transition-duration: 500ms;
 }
 
 .oppenheimer{
@@ -276,8 +292,6 @@ input[type="submit"] {
     border-radius: 10px;
     opacity: 0;
 }
-
-
 
 .tarjeta {
     display: flex;

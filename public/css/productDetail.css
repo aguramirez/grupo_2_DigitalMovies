@@ -13,6 +13,7 @@ header {
 .logo{
     width: 20%;
     margin: 10px;
+    position: relative;
 }
 
 nav img {
@@ -31,6 +32,7 @@ nav input {
     border: 1px solid #ccc;
     border-radius: 5px;
     width: 40%;
+    font-size: 14px;
 }
 
 .botones-nav {
@@ -48,6 +50,8 @@ nav input {
     border-radius: 5px;
     width: 100%;
     margin: 10px;
+    padding: 10px;
+    text-align: center;
 }
 
 .botones-usuario {
@@ -63,14 +67,20 @@ nav input {
     text-decoration: none;
 }
 
-.register,
-.login {
+.register, .login {
     color: white;
+    text-align: center;
 }
 
-.botones-nav button:hover {
-    background-color: #45a049;
+.boton-nav:hover{
+    background-color: #306d33;
+    transition-duration: 500ms;
 }
+
+.fa-solid{
+    position: relative;
+    bottom: 5px;
+  }
 
 main {
     font-family: Arial, sans-serif;
@@ -104,10 +114,12 @@ main {
     border: none;
     cursor: pointer;
     margin: 10px;
+    transition-duration: 500ms;
   }
 
   .boton-editar:hover {
-    background-color: #2980b9;
+    background-color: #1d5981;
+    transition-duration: 500ms;
   }
 
   .boton-borrar{
@@ -122,10 +134,12 @@ main {
     cursor: pointer;
     margin: 10px;
     font-size: 16px;
+    transition-duration: 500ms;
   }
 
   .boton-borrar:hover {
-    background-color: #c72f3e;
+    background-color: #7e1e27;
+    transition-duration: 500ms;
   }
 
 .card-sinopsis {
@@ -181,6 +195,12 @@ input[type="submit"] {
     font-size: 16px;
     cursor: pointer;
     border-radius: 5px;
+    transition-duration: 500ms;
+}
+
+input[type="submit"]:hover{
+    background-color: #306d33;
+    transition-duration: 500ms;
 }
 
 footer{

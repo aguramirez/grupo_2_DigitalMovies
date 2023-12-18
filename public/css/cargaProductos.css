@@ -28,6 +28,7 @@ header {
 .logo{
   width: 20%;
   margin: 10px;
+  position: relative;
 }
 
 nav img {
@@ -46,6 +47,7 @@ nav input {
     border: 1px solid #ccc;
     border-radius: 5px;
     width: 40%;
+    font-size: 14px;
 }
 
 .botones-nav{
@@ -63,7 +65,10 @@ nav input {
     border-radius: 5px;
     width: 100%;
     margin: 10px;
-}
+    padding: 10px;
+    text-align: center;
+    transition-duration: 500ms;
+  }
 
 .botones-usuario{
     display: flex;
@@ -80,17 +85,24 @@ nav input {
 
 .register, .login{
     color: white;
+    text-align: center;
 }
 
-.botones-nav button:hover {
-    background-color: #45a049;
+.boton-nav:hover{
+  background-color: #306d33;
+  transition-duration: 500ms;
+}
+
+.fa-solid{
+  position: relative;
+  bottom: 5px;
 }
 
 main {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 100%;
     background-color: #f5f5f5;
     padding: 30px;
   }
@@ -101,8 +113,7 @@ main {
     margin: auto;
   }
   
-  .izq-card,
-  .der-card {
+  .izq-card, .der-card {
     background-color: #ffffff;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -160,6 +171,7 @@ main {
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    transition-duration: 500ms;
   }
   
   .cancel-btn {
@@ -174,14 +186,17 @@ main {
     justify-content: center;
     font-size: 13px;
     text-decoration: none;
+    transition-duration: 500ms;
   }
 
   .cancel-btn:hover {
-    background-color: #c72f3e;
+    background-color: #7e1e27;
+    transition-duration: 500ms;
   }
   
   button:hover {
-    background-color: #0056b3;
+    background-color: #1d5981;
+    transition-duration: 500ms;
   }
   
   .profile-picture {

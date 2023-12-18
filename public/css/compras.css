@@ -13,6 +13,7 @@ header {
 .logo{
     width: 20%;
     margin: 10px;
+    position: relative;
 }
 
 nav img {
@@ -31,6 +32,7 @@ nav input {
     border: 1px solid #ccc;
     border-radius: 5px;
     width: 40%;
+    font-size: 14px;
 }
 
 .botones-nav {
@@ -38,7 +40,7 @@ nav input {
     margin: 10px;
 }
 
-.botones-nav button {
+.botones-nav a {
     display: block;
     background-color: #4CAF50;
     border: none;
@@ -48,6 +50,9 @@ nav input {
     border-radius: 5px;
     width: 100%;
     margin: 10px;
+    padding: 10px;
+    text-align: center;
+    transition-duration: 500ms;
 }
 
 .botones-usuario{
@@ -65,11 +70,18 @@ nav input {
 
 .register, .login{
     color: white;
+    text-align: center;
 }
 
-.botones-nav button:hover {
-    background-color: #45a049;
+.boton-nav:hover{
+    background-color: #306d33;
+    transition-duration: 500ms;
 }
+
+.fa-solid{
+    position: relative;
+    bottom: 5px;
+  }
 
 .tarjeta {
     border: 1px solid #ddd;
@@ -148,9 +160,11 @@ button {
     color: white;
     border: none;
     font-size: 25px;
+    transition-duration: 500ms;
 }
 .contenedores button:hover{
-    background-color: #45a049;
+    background-color: #306d33;
+    transition-duration: 500ms;
 }
 footer{
     display: flex;
